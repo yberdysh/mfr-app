@@ -1,40 +1,107 @@
 @import "../../styles/index.scss";
 
 .page-section {
-  &__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    padding: 50px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 
-    &[data-flipped="true"] {
-      .page-section__image-container {
-        grid-column: 2;
-        grid-row: 1;
-      }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+
+    &[data-mobile-flip="true"] {
+      flex-direction: column-reverse;
+
       .page-section__text-container {
-        grid-column: 1;
-        grid-row: 1;
+        margin-bottom: 25px;
+
+        @include mq(s) {
+          margin-bottom: 0;
+        }
       }
+    }
+
+    @include mq(s) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+
+      &[data-flipped="true"] {
+        .page-section__image-container {
+          grid-column: 2;
+          grid-row: 1;
+
+          @include mq(m) {
+            align-items: end;
+          }
+        }
+        .page-section__text-container {
+          grid-column: 1;
+          grid-row: 1;
+        }
+      }
+      &[data-no-image="true"] {
+        display: flex;
+        flex-direction: column;
+        max-width: 675px;
+      }
+    }
+    @include mq(m) {
+      gap: 50px;
+      padding: 50px 25px;
+    }
+    @include mq(xl) {
+      padding: 50px 0;
     }
   }
   &__image-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @include mq(m) {
+      align-items: normal;
+    }
+
+    &[data-tall] {
+      align-items: center;
+
+      .page-section__image-container__image {
+        max-width: 200px;
+
+        @include mq(s) {
+          width: 100%;
+        }
+      }
+    }
 
     &__image {
-      max-width: 500px;
+      max-width: 400px;
+
+      @include mq(xl) {
+        max-width: 500px;
+      }
     }
     &__caption-container {
       margin-top: 25px;
-      max-width: 500px;
+      max-width: 400px;
+
+      @include mq(xl) {
+        max-width: 500px;
+      }
 
       &__caption {
         font-style: italic;
         color: $text-brown;
-        font-size: 12px;
-        padding: 10px 20px;
+        font-size: 14px;
+        padding: 5px 10px;
         border: 1px solid $text-brown;
+
+        @include mq(s) {
+          padding: 10px 20px;
+        }
       }
     }
   }
@@ -52,12 +119,32 @@
 
     &__button-container {
       display: flex;
-      justify-content: space-around;
-      margin-top: 50px;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 25px;
+      align-items: center;
+
+      @include mq(m) {
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
       button {
         @include button($button-blue, $white);
+
+        &[data-color="blue"] {
+          @include button($button-blue, $white);
+        }
+        &[data-color="yellow"] {
+          @include button($bkgd-yellow, $white);
+        }
       }
     }
   }
+}
+
+.page-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

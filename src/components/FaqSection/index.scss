@@ -1,0 +1,59 @@
+@import "../../styles/index.scss";
+
+.faq-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  padding-bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include mq(m) {
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @include mq(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    font-size: 26px;
+    color: $text-brown;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include mq(m) {
+      display: grid;
+      gap: 0;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__questions {
+      .accordion:last-child {
+        border-bottom: 2px solid $text-brown;
+      }
+    }
+
+    &__image {
+      img {
+        width: 100%;
+        max-width: 500px;
+
+        @include mq(m) {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}

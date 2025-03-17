@@ -2,8 +2,14 @@ import "./index.scss";
 import PageSection from "../../components/PageSection";
 import premfr from "../../assets/premfr.jpeg";
 import postmfr from "../../assets/postmfr.jpeg";
+import { useEffect } from "react";
+import changeBackgroundColor from "../../utils/changeBkgdColor";
 
 function AboutPage() {
+  useEffect(() => {
+    changeBackgroundColor("#edd286");
+  }, []);
+
   return (
     <div className="about-page">
       <PageSection
@@ -38,7 +44,7 @@ function AboutPage() {
               for being too lazy to do the homework. But everyone goes through
               it, right?
             </p>
-            <p style={{ textTransform: "italics" }}>Right..?</p>
+            <p style={{ fontStyle: "italic" }}>Right..?</p>
           </div>
         }
         image={premfr}

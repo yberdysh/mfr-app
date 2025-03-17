@@ -1,0 +1,39 @@
+@import "../../styles/index.scss";
+
+.accordion {
+  &__header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 2px solid $text-brown;
+    border-bottom: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: $text-brown;
+    font-size: 24px;
+    cursor: pointer;
+
+    h4 {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+
+    &__container {
+      color: $text-brown;
+      font-size: 16px;
+      padding: 10px;
+      border: 2px solid $text-brown;
+      border-top: none;
+      border-bottom: none;
+      text-align: left;
+    }
+  }
+}
