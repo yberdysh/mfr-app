@@ -1,25 +1,19 @@
 @mixin button($background-color: black, $text-color: white) {
   display: inline-block;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 20px;
   outline: none;
-  padding: 6px 8px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   font-weight: 700;
-
-  @include mq(m) {
-    padding: 6px 5px;
-  }
-  @include mq(xl) {
-    padding: 16px 20px;
-    line-height: 24px;
-    font-size: 24px;
-  }
-
+  padding: 16px 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: $text-color;
+  background-color: $background-color;
   color: $text-color;
   background-color: $background-color;
 

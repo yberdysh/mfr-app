@@ -1,40 +1,78 @@
 @import "../../styles/index.scss";
 
 .page-section {
-  &__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    padding: 50px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 
-    &[data-flipped="true"] {
-      .page-section__image-container {
-        grid-column: 2;
-        grid-row: 1;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+
+    @include mq(s) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+
+      &[data-flipped="true"] {
+        .page-section__image-container {
+          grid-column: 2;
+          grid-row: 1;
+
+          @include mq(m) {
+            align-items: end;
+          }
+        }
+        .page-section__text-container {
+          grid-column: 1;
+          grid-row: 1;
+        }
       }
-      .page-section__text-container {
-        grid-column: 1;
-        grid-row: 1;
-      }
+    }
+    @include mq(m) {
+      gap: 50px;
+      padding: 50px 25px;
+    }
+    @include mq(xl) {
+      padding: 50px 0;
     }
   }
   &__image-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @include mq(m) {
+      align-items: normal;
+    }
 
     &__image {
-      max-width: 500px;
+      max-width: 400px;
+
+      @include mq(xl) {
+        max-width: 500px;
+      }
     }
     &__caption-container {
       margin-top: 25px;
-      max-width: 500px;
+      max-width: 400px;
+
+      @include mq(xl) {
+        max-width: 500px;
+      }
 
       &__caption {
         font-style: italic;
         color: $text-brown;
-        font-size: 12px;
-        padding: 10px 20px;
+        font-size: 14px;
+        padding: 5px 10px;
         border: 1px solid $text-brown;
+
+        @include mq(s) {
+          padding: 10px 20px;
+        }
       }
     }
   }
@@ -52,12 +90,25 @@
 
     &__button-container {
       display: flex;
-      justify-content: space-around;
-      margin-top: 50px;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 25px;
+      align-items: center;
+
+      @include mq(m) {
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
       button {
         @include button($button-blue, $white);
       }
     }
   }
+}
+
+.page-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

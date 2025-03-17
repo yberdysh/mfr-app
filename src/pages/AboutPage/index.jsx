@@ -38,7 +38,7 @@ function AboutPage() {
               for being too lazy to do the homework. But everyone goes through
               it, right?
             </p>
-            <p style={{ textTransform: "italics" }}>Right..?</p>
+            <p style={{ fontStyle: "italic" }}>Right..?</p>
           </div>
         }
         image={premfr}
