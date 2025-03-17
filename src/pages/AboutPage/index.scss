@@ -1,12 +1,7 @@
 @import "../../styles/index.scss";
 
-
 .about-page {
-  
-    .banner-image {
-        max-width: 1200px;
-    }
-    .banner {
-        margin: 32px;
-    }
+  background: $bkgd-yellow;
+  margin-top: 92px;
+  max-width: 1200px;
 }

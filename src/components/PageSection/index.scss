@@ -1,0 +1,63 @@
+@import "../../styles/index.scss";
+
+.page-section {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 50px 0;
+
+    &[data-flipped="true"] {
+      .page-section__image-container {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .page-section__text-container {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      max-width: 500px;
+    }
+    &__caption-container {
+      margin-top: 25px;
+      max-width: 500px;
+
+      &__caption {
+        font-style: italic;
+        color: $text-brown;
+        font-size: 12px;
+        padding: 10px 20px;
+        border: 1px solid $text-brown;
+      }
+    }
+  }
+  &__text-container {
+    color: $text-brown;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &__content {
+      font-size: 18px;
+    }
+
+    &__button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+
+      button {
+        @include button($button-blue, $white);
+      }
+    }
+  }
+}
