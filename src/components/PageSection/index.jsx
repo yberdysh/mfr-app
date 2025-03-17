@@ -1,5 +1,6 @@
 import "./index.scss";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
+import lazyLoad from "../../utils/lazyload";
 
 function PageSection({
   background,
@@ -11,32 +12,11 @@ function PageSection({
   imageAlt,
   flipped,
   imageCaption,
+  imageTall,
+  noImage,
+  mobileFlip,
 }) {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const sectionRef = lazyLoad();
 
   function buttonHandler(link) {
     // do the thing
@@ -51,21 +31,28 @@ function PageSection({
       style={{ backgroundColor: background ? background : "transparent" }}
       ref={sectionRef}
     >
-      <div className="page-section__container" data-flipped={flipped}>
-        <div className="page-section__image-container">
-          <img
-            src={image ? image : testImg}
-            className="page-section__image-container__image"
-            alt={imageAlt}
-          />
-          {imageCaption && (
-            <div className="page-section__image-container__caption-container">
-              <div className="page-section__image-container__caption-container__caption">
-                {imageCaption}
+      <div
+        className="page-section__container"
+        data-flipped={flipped}
+        data-no-image={noImage}
+        data-mobile-flip={mobileFlip}
+      >
+        {!noImage && (
+          <div className="page-section__image-container" data-tall={imageTall}>
+            <img
+              src={image ? image : testImg}
+              className="page-section__image-container__image"
+              alt={imageAlt}
+            />
+            {imageCaption && (
+              <div className="page-section__image-container__caption-container">
+                <div className="page-section__image-container__caption-container__caption">
+                  {imageCaption}
+                </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        )}
 
         <div className="page-section__text-container">
           {title && (
@@ -80,7 +67,11 @@ function PageSection({
           {buttons && (
             <div className="page-section__text-container__button-container">
               {buttons.map((button, index) => (
-                <button key={index} onClick={buttonHandler(button.link)}>
+                <button
+                  key={index}
+                  onClick={buttonHandler(button.link)}
+                  data-color={button.type}
+                >
                   {button.text}
                 </button>
               ))}

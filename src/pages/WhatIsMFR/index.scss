@@ -1,0 +1,19 @@
+@import "../../styles/index.scss";
+
+.wimfr-page {
+  max-width: 1200px;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 50px;
+
+  &__review-section {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+
+    &__button {
+      max-width: 210px;
+      @include button($bkgd-yellow, $white);
+    }
+  }
+}

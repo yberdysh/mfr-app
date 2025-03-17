@@ -1,0 +1,94 @@
+@import "../../styles/index.scss";
+
+.conditions {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  padding: 25px 16px;
+  padding-right: 8px;
+
+  @include mq(m) {
+    padding: 50px 25px;
+  }
+  @include mq(xl) {
+    padding: 50px 0;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    color: $text-brown;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    @include mq(s) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding-top: 25px;
+    }
+    @include mq(m) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__and-more {
+    padding: 12px 0;
+    font-size: 14.5px;
+    color: $text-brown;
+
+    @include mq(m) {
+      font-size: 20px;
+      padding: 25px 0;
+    }
+    @include mq(xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__button {
+    @include button($bkgd-yellow, $white);
+  }
+}
+
+.condition {
+  display: flex;
+  gap: 2px;
+
+  @include mq(s) {
+    gap: 5px;
+  }
+
+  &__text {
+    font-size: 14.5px;
+    color: $text-brown;
+
+    @include mq(m) {
+      font-size: 20px;
+    }
+    @include mq(xl) {
+      font-size: 24px;
+    }
+  }
+  img {
+    max-width: 14.5px;
+    max-height: 14.5px;
+
+    @include mq(m) {
+      max-width: 20px;
+      max-height: 20px;
+    }
+    @include mq(xl) {
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+}

@@ -1,14 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
 function NavBar() {
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  useEffect(() => {
+    const nav = document.getElementById("nav");
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      if (currentScrollPos > 41) {
+        if (prevScrollPos > currentScrollPos) {
+          if (nav) nav.style.top = "0";
+        } else {
+          if (nav) nav.style.top = "-110px";
+        }
+      } else {
+        if (nav) nav.style.top = "0";
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   // Adjust content height depending on the nav bar height
   const adjustContentMarginTop = () => {
     const navBar = document.getElementById("nav");
     const content = document.getElementById("page-content");
-
-    console.log("nav: ", nav, "content", content);
 
     if (navBar && content) {
       content.style.marginTop = `${navBar.offsetHeight}px`;
@@ -38,7 +64,7 @@ function NavBar() {
         <div className="navbar-links">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <a href="#services">What is MFR?</a>
+          <Link to="/what-is-mfr">What is MFR</Link>
           <a href="#contact">Contact</a>
           <button className="action-button" onClick={handleBooking}>
             Book Now

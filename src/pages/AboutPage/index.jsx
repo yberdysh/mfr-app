@@ -2,8 +2,14 @@ import "./index.scss";
 import PageSection from "../../components/PageSection";
 import premfr from "../../assets/premfr.jpeg";
 import postmfr from "../../assets/postmfr.jpeg";
+import { useEffect } from "react";
+import changeBackgroundColor from "../../utils/changeBkgdColor";
 
 function AboutPage() {
+  useEffect(() => {
+    changeBackgroundColor("#edd286");
+  }, []);
+
   return (
     <div className="about-page">
       <PageSection
