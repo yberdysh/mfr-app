@@ -6,9 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  // background-color: $wall-blue;
   background-color: rgba(90, 199, 232, 0.9);
-  // opacity: .9;
   z-index: 100;
 
   @media (min-width: 1200px) {
@@ -22,45 +20,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  // background-color: $goluboy;
-  font-family: "Gentium Plus", serif; // Apply the font to the
-  color: #fff;
+  padding: 12px;
+  color: $white;
+
+  @include mq(m) {
+    padding: 25px;
+  }
+  @include mq(xl) {
+    padding: 25px 0;
+  }
 
   .navbar-brand {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: "Lavishyly Yours", cursive;
-    font-weight: 800;
+    font-weight: 700;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $bkgd-yellow;
+    }
+    &:focus,
+    &:active {
+      border: none;
+    }
   }
 
   .navbar-links {
     display: flex;
     align-items: center;
     position: relative;
+    font-family: "Gentium Plus", serif;
+
+    @include mq(m) {
+      gap: 20px;
+    }
+    @include mq(xl) {
+      gap: 30px;
+    }
 
     a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 1rem;
-      transition: color 0.3s;
-
-      &:hover {
-        color: #ddd;
-      }
+      font-family: "Lavishyly Yours", cursive;
+      font-size: 25px;
     }
 
     .action-button {
-      background-color: #d1b977;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #0056b3;
-      }
+      @include button($bkgd-yellow, $white) // background-color: #d1b977;
+        //   color: #fff;
+        // padding: 0.5rem 1rem;
+        // border: none;
+        // border-radius: 4px;
+        // cursor: pointer;
+        // transition: background-color 0.3s;
+        // &:hover {
+        //   background-color: #0056b3;
+        // }
+;
     }
   }
 }
