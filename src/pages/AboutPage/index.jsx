@@ -2,6 +2,7 @@ import "./index.scss";
 import PageSection from "../../components/PageSection";
 import premfr from "../../assets/premfr.jpeg";
 import postmfr from "../../assets/postmfr.jpeg";
+import ladyFascia from "../../assets/lady-fascia.jpeg";
 import { useEffect } from "react";
 
 function AboutPage() {
@@ -10,7 +11,11 @@ function AboutPage() {
       <div className="about-content">
         <PageSection
           title="Hi, I’m Yevgeniya, Also Known as Lady Fascia"
-          content="Welcome! You've come the right place! I'm a myofascial release here to help you get unstuck and feel free again. Let's go a healing journey together!"
+          content={
+            "I’m a Myofascial Release Therapist, and I help people like you feel free in their bodies and minds. I specialize in treating chronic pain, postpartum issues, and emotional trauma. I’m here to help you unlock your body’s potential and feel limitless."
+          }
+          image={ladyFascia}
+          imageAlt="Lady Fascia"
           buttons={[
             { text: "Book a Session", link: "www.google.com", type: "blue" },
           ]}
