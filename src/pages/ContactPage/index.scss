@@ -1,0 +1,68 @@
+@import "../../styles/index.scss";
+.contact {
+  background-color: $other-bkg-blue;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  width: calc(100% - 50px);
+  max-width: 600px;
+  justify-self: center;
+  padding: 20px;
+  border: 1px solid $bkgd-yellow;
+  border-radius: 5px;
+  background-color: $lightblack;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+      font-weight: bold;
+      color: $bkgd-yellow;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid $bkgd-yellow;
+      border-radius: 5px;
+      background-color: $dimgrey;
+      color: $white;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 200px;
+    }
+  }
+
+  &__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: $bkgd-yellow;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($bkgd-yellow, 10%);
+    }
+  }
+}

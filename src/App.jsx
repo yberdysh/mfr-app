@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import Navbar from "./components/NavBar";
 import WhatIsMFR from "./pages/WhatIsMFR";
 import ScrollToTop from "./utils/scrollToTop";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/what-is-mfr" element={<WhatIsMFR />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
       </ScrollToTop>
