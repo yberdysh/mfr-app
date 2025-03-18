@@ -1,0 +1,52 @@
+@import "../../styles/index.scss";
+
+.list-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  padding: 25px 16px;
+
+  @include mq(m) {
+    padding: 50px 25px;
+  }
+  @include mq(xl) {
+    padding: 50px 0;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__title {
+    font-size: 26px;
+    color: $text-brown;
+  }
+
+  &__content {
+    ul,
+    div {
+      font-size: 18px;
+      color: $text-brown;
+
+      @include mq(s) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 0;
+
+      li {
+        margin-left: 0;
+        list-style-position: inside;
+
+        @include mq(s) {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
