@@ -13,6 +13,21 @@ function FaqSection() {
         "MFR is a hands-on modality and works with the physical body through touch, so it is not classified as energy work. There is more and more science coming out in recent times to support the role that fascia plays in pathology. That being said, even physical bodywork does tend to have a component of “energy.” This is because science has recently shown that emotions are stored in the body, not in the mind– and in fact tissue has memory.",
     },
     {
+      title: "What will I feel during an MFR session? ",
+      content:
+        "MFR feels like magic. You may feel deeply relaxed and fall asleep. You may feel your body moving around as it intuitively moves to get unstuck and reintegrates itself. You may feel yourself getting unblocked or energy moving within you in real time. If you allow yourself, you may feel emotions come up. You may feel an incredible relief and sense of complete release as a pain you’ve had for a decade disintegrates under the therapist’s hands. Or, it may feel uneventful as fascia is quietly releasing, and you’ll find some affects afterward. ",
+    },
+    {
+      title: "Do you take insurance?",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+    {
+      title: "How many sessions will I need?",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+    {
       title: "Am I going to end up emotional in my session?",
       content:
         "Maybe. Not necessarily. If you are not typically emotionally open, you will not suddenly become emotional during a session. Remember that you always have a choice and no one will force you through an emotional barrier that you’re not ready to cross. That being said, I do recommend you not suppress emotions during a session since feeling will help the healing process.",
