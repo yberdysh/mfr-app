@@ -1,12 +1,17 @@
 @import "../../styles/index.scss";
 
-
 .home-page {
-  
-    .banner-image {
-        max-width: 1200px;
-    }
-    .banner {
-        margin: 32px;
-    }
+  background-color: $bkgd-yellow;
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .banner-image {
+    max-width: 1200px;
+  }
+  .banner {
+    margin: 32px;
+  }
 }

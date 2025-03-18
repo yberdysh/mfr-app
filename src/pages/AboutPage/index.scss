@@ -1,6 +1,10 @@
 @import "../../styles/index.scss";
 
 .about-page {
-  background: $bkgd-yellow;
+  background-color: $bkgd-yellow;
+}
+
+.about-content {
   max-width: 1200px;
+  margin: 0 auto;
 }
