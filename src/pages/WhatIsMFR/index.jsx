@@ -70,35 +70,7 @@ function WhatIsMFR() {
             },
           ]}
         />
-<<<<<<< HEAD
-        <Section
-          sections={[
-            {
-              content: (
-                <div style={{ maxWidth: "700px" }}>
-                  <h3 style={{ textAlign: "center" }}>
-                    So then…what does MFR actually feel like during a session?
-                  </h3>
-                  <p>
-                    MFR feels like magic. You may feel deeply relaxed and fall
-                    asleep. You may feel your body moving around as it
-                    intuitively moves to get unstuck and reintegrates itself.
-                    You may feel yourself getting unblocked or energy moving
-                    within you in real time. If you allow yourself, you may feel
-                    emotions come up. You may feel an incredible relief and
-                    sense of complete release as a pain you’ve had for a decade
-                    disintegrates under the therapist’s hands. Or, it may feel
-                    uneventful as fascia is quietly releasing, and you’ll find
-                    some affects afterward.
-                  </p>
-                </div>
-              ),
-            },
-          ]}
-        />
-=======
         <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
->>>>>>> master
         <Review
           content="I was genuinely baffled by how much my body seemed to react. 
         It made me feel much lighter and even has a strangely meditative effect 
