@@ -2,32 +2,39 @@ import "./index.scss";
 import React, { useState } from "react";
 
 function ContactPage() {
+  const [name, setName] = useState(""); // Add state for name
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:yberdysh@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:ladyfascia@myofascialawakening.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}%0A%0AFrom: ${encodeURIComponent(
-      email
-    )}`;
+      name
+    )} (${encodeURIComponent(email)})`;
     window.location.href = mailtoLink;
   };
 
   return (
     <div className="contact">
       <div className="contact-content">
-        <h1>Contact Me</h1>
-        <p>
-          If you have any questions or feedback regarding Legends Rise, please
-          reach out!
-        </p>
+        <h1>Get in Touch!</h1>
 
         <form className="email-form" onSubmit={handleSubmit}>
           <div className="email-form__field">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)} // Update name state
+              required
+            />
+          </div>
+          <div className="email-form__field">
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -37,7 +44,7 @@ function ContactPage() {
             />
           </div>
           <div className="email-form__field">
-            <label htmlFor="subject">Subject:</label>
+            <label htmlFor="subject">Message Subject</label>
             <input
               type="text"
               id="subject"
@@ -47,7 +54,7 @@ function ContactPage() {
             />
           </div>
           <div className="email-form__field">
-            <label htmlFor="body">Body:</label>
+            <label htmlFor="body">Message</label>
             <textarea
               id="body"
               value={body}
