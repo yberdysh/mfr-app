@@ -14,6 +14,10 @@
     grid-auto-columns: 1fr;
     gap: 50px;
     align-items: center;
+
+    &[data-ratio="two-thirds"] {
+      grid-template-columns: 2fr 1fr;
+    }
   }
   @include mq(m) {
     gap: 50px;

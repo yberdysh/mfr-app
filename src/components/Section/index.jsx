@@ -1,12 +1,23 @@
-import "./index.scss";
-import SectionContent from "../SectionContent";
-import lazyLoad from "../../utils/lazyload";
+import './index.scss';
+import SectionContent from '../SectionContent';
+import lazyLoad from '../../utils/lazyload';
 
-function Section({ sections }) {
+function Section({ sections, ratio }) {
   const sectionRef = lazyLoad();
 
+  function setRatioWidth() {
+    switch (ratio) {
+      case '2:1':
+        return 'two-thirds';
+      default:
+        return 'default';
+    }
+  }
+
+  const ratioData = setRatioWidth();
+
   return (
-    <div className="section" ref={sectionRef}>
+    <div className="section" ref={sectionRef} data-ratio={ratioData}>
       {sections.map((section, id) => (
         <SectionContent
           key={id}
