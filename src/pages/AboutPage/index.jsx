@@ -1,9 +1,9 @@
-import "./index.scss";
-import PageSection from "../../components/PageSection";
-import premfr from "../../assets/premfr.jpeg";
-import postmfr from "../../assets/postmfr.jpeg";
-import ladyFascia from "../../assets/lady-fascia.jpeg";
-import { useEffect } from "react";
+import './index.scss';
+import PageSection from '../../components/PageSection';
+import premfr from '../../assets/premfr.jpeg';
+import postmfr from '../../assets/postmfr.jpeg';
+import ladyFascia from '../../assets/lady-fascia.jpeg';
+import { useEffect } from 'react';
 
 function AboutPage() {
   return (
@@ -12,12 +12,12 @@ function AboutPage() {
         <PageSection
           title="Hi, I’m Yevgeniya, Also Known as Lady Fascia"
           content={
-            "I’m a Myofascial Release Therapist, and I help people like you feel free in their bodies and minds. I specialize in treating chronic pain, postpartum issues, and emotional trauma. I’m here to help you unlock your body’s potential and feel limitless."
+            'I’m a Myofascial Release Therapist, and I help people like you feel free in their bodies and minds. I specialize in treating chronic pain, postpartum issues, and emotional trauma. I’m here to help you unlock your body’s potential and feel limitless.'
           }
           image={ladyFascia}
           imageAlt="Lady Fascia"
           buttons={[
-            { text: "Book a Session", link: "www.google.com", type: "blue" },
+            { text: 'Book a Session', link: 'www.google.com', type: 'yellow' },
           ]}
         />
         <PageSection
@@ -45,15 +45,15 @@ function AboutPage() {
                 for being too lazy to do the homework. But everyone goes through
                 it, right?
               </p>
-              <p style={{ fontStyle: "italic" }}>Right..?</p>
+              <p style={{ fontStyle: 'italic' }}>Right..?</p>
             </div>
           }
           image={premfr}
           imageAlt="Me before I discovered MFR"
           imageCaption="This is a real photo of me in Physical Therapy struggling with range of motion in my shoulder and failing to make progress - my hands were not able to get any closer than this!"
           buttons={[
-            { text: "Learn about MFR", link: "www.google.com", type: "blue" },
-            { text: "Book a Session", link: "www.google.com", type: "blue" },
+            { text: 'Learn about MFR', link: 'www.google.com', type: 'yellow' },
+            { text: 'Book a Session', link: 'www.google.com', type: 'yellow' },
           ]}
         />
         <PageSection
@@ -81,8 +81,8 @@ function AboutPage() {
           imageAlt="Me after I discovered MFR"
           imageCaption="Today, my hands are able to touch and my shoulder is free all thanks to myofascial release!"
           buttons={[
-            { text: "What is MFR?", link: "www.google.com", type: "blue" },
-            { text: "Book a Session", link: "www.google.com", type: "blue" },
+            { text: 'What is MFR?', link: 'www.google.com', type: 'yellow' },
+            { text: 'Book a Session', link: 'www.google.com', type: 'yellow' },
           ]}
         />
       </div>

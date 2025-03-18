@@ -1,10 +1,10 @@
-import "./index.scss";
-import { useEffect } from "react";
-import PageSection from "../../components/PageSection";
-import skeleton from "../../assets/skeleton.png";
-import Review from "../../components/Review";
-import Conditions from "../../components/Conditions";
-import FaqSection from "../../components/FaqSection";
+import './index.scss';
+import { useEffect } from 'react';
+import PageSection from '../../components/PageSection';
+import skeleton from '../../assets/skeleton.png';
+import Review from '../../components/Review';
+import Conditions from '../../components/Conditions';
+import FaqSection from '../../components/FaqSection';
 
 function WhatIsMFR() {
   function handleBooking() {
@@ -15,10 +15,10 @@ function WhatIsMFR() {
     <div className="wimfr-page">
       <div className="wimfr-content">
         <PageSection
-          title="What is Myofascial Release?"
           mobileFlip
           content={
             <div>
+              <h3>What is Fascia?</h3>
               <p>
                 MFR is a gentle hands-on bodywork approach where the therapist
                 applies sustained pressure to the body in order to release
@@ -28,6 +28,7 @@ function WhatIsMFR() {
                 substance and collagenous barrier of this 3D matrix, and relieve
                 the 2,000 lbs of crushing pressure on pain-sensitive structures.
               </p>
+              <h3>What is Fascia?</h3>
               <p>
                 MFR is meant to be experienced. You will not get a good
                 understanding of how MFR feels through google searching or
@@ -38,7 +39,7 @@ function WhatIsMFR() {
             </div>
           }
           buttons={[
-            { text: "Book a Session", link: "www.google.com", type: "yellow" },
+            { text: 'Book a Session', link: 'www.google.com', type: 'yellow' },
           ]}
           image={skeleton}
           imageAlt="Practical example of restrictions on human body"
