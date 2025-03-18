@@ -1,9 +1,9 @@
-import './index.scss';
-import skeleton from '../../assets/skeleton.png';
-import Review from '../../components/Review';
-import Conditions from '../../components/Conditions';
-import FaqSection from '../../components/FaqSection';
-import Section from '../../components/Section';
+import "./index.scss";
+import skeleton from "../../assets/skeleton.png";
+import Review from "../../components/Review";
+import Conditions from "../../components/Conditions";
+import FaqSection from "../../components/FaqSection";
+import Section from "../../components/Section";
 
 function WhatIsMFR() {
   function handleBooking() {
@@ -42,17 +42,17 @@ function WhatIsMFR() {
               ),
               buttons: [
                 {
-                  text: 'Book a Session',
-                  link: 'www.google.com',
-                  type: 'yellow',
+                  text: "Book a Session",
+                  link: "www.google.com",
+                  type: "yellow",
                 },
               ],
             },
             {
               image: skeleton,
-              imageAlt: 'Practical example of restrictions on human body',
+              imageAlt: "Practical example of restrictions on human body",
               imageCaption:
-                'A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture',
+                "A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture",
               imageTall: true,
             },
           ]}
@@ -61,8 +61,8 @@ function WhatIsMFR() {
           sections={[
             {
               content: (
-                <div style={{ maxWidth: '700px' }}>
-                  <h3 style={{ textAlign: 'center' }}>
+                <div style={{ maxWidth: "700px" }}>
+                  <h3 style={{ textAlign: "center" }}>
                     So then…what does MFR actually feel like during a session?
                   </h3>
                   <p>
@@ -93,7 +93,7 @@ function WhatIsMFR() {
           <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
           <Review content="The pain I’ve been lliving with in my neck and shoulder for 10 years is gone. I’m amazed." />
           <button
-            className="wimfr-page__review-section__button"
+            className="wimfr-content__review-section__button"
             onClick={handleBooking}
           >
             Book a Session
