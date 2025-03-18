@@ -82,7 +82,7 @@ function WhatIsMFR() {
           <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
           <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
           <button
-            className="wimfr-page__review-section__button"
+            className="wimfr-content__review-section__button"
             onClick={handleBooking}
           >
             Book a Session
