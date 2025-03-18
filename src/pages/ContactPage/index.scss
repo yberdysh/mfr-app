@@ -1,0 +1,74 @@
+@import "../../styles/index.scss";
+.contact {
+  // background-color: $other-bkg-blue;
+  background-color: $teal;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 50px;
+  padding: 25px 16px;
+
+  @include mq(m) {
+    padding: 50px 25px;
+  }
+  @include mq(xl) {
+    padding: 50px 0;
+  }
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  width: calc(100% - 50px);
+  max-width: 600px;
+  justify-self: center;
+  padding: 20px;
+  // border: 1px solid $bkgd-yellow;
+  border-radius: 40px;
+  // background-color: $bkgd-yellow;
+  background-color: $other-bkg-blue;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+      font-weight: bold;
+      color: $text-brown;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      // border: 1px solid $bkgd-yellow;
+      border: 1px solid $other-bkg-blue;
+      border-radius: 5px;
+      // background-color: $other-bkg-blue;
+      background-color: $bkgd-yellow;
+      color: $text-brown;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 200px;
+    }
+  }
+
+  &__button {
+    // @include button($button-blue, $white);
+    @include button($bkgd-yellow, $white);
+    font-size: 16px;
+
+    @include mq(s) {
+      font-size: 20px;
+    }
+  }
+}

@@ -97,13 +97,13 @@ function NavBar() {
           >
             What is MFR
           </Link>
-          <a
+          <Link
             className="navbar-links__link"
             onClick={() => setIsMobileNavOpen(false)}
-            href="#contact"
+            to="/contact"
           >
             Contact
-          </a>
+          </Link>
           <button className="action-button" onClick={handleBooking}>
             Book Now
           </button>
