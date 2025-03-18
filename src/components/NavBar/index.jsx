@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
+import { BREAKPOINTS } from "../../utils/getBreakpoint";
 
 function NavBar() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
+  // Makes navbar go away when you scroll down, and reappear when you scroll up
   useEffect(() => {
     const nav = document.getElementById("nav");
 
@@ -53,22 +56,67 @@ function NavBar() {
 
   function handleBooking() {
     // booking logic goes here...
+    setIsMobileNavOpen(false);
+  }
+
+  function toggleMobileNav() {
+    if (window.innerWidth > BREAKPOINTS.TABLET) {
+      setIsMobileNavOpen(false);
+    } else {
+      setIsMobileNavOpen(!isMobileNavOpen);
+    }
   }
 
   return (
     <div className="navbar-container" id="nav">
       <nav className="navbar">
         <div className="navbar-brand">
-          <Link to="/">Myofascial Awakening</Link>
+          <Link to="/" onClick={() => setIsMobileNavOpen(false)}>
+            Myofascial Awakening
+          </Link>
         </div>
-        <div className="navbar-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/what-is-mfr">What is MFR</Link>
-          <a href="#contact">Contact</a>
+        <div className="navbar-links" data-is-active={isMobileNavOpen}>
+          <Link
+            className="navbar-links__link"
+            onClick={() => setIsMobileNavOpen(false)}
+            to="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="navbar-links__link"
+            onClick={() => setIsMobileNavOpen(false)}
+            to="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="navbar-links__link"
+            onClick={() => setIsMobileNavOpen(false)}
+            to="/what-is-mfr"
+          >
+            What is MFR
+          </Link>
+          <a
+            className="navbar-links__link"
+            onClick={() => setIsMobileNavOpen(false)}
+            href="#contact"
+          >
+            Contact
+          </a>
           <button className="action-button" onClick={handleBooking}>
             Book Now
           </button>
+        </div>
+        <div
+          className="navbar__mobile-menu"
+          onClick={toggleMobileNav}
+          data-is-active={isMobileNavOpen}
+        >
+          <span className="mobile-menu-icon"></span>
+          <span className="mobile-menu-icon"></span>
+          <span className="mobile-menu-icon"></span>
+          <span className="mobile-menu-icon"></span>
         </div>
       </nav>
     </div>
