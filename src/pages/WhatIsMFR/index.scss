@@ -1,7 +1,13 @@
 @import "../../styles/index.scss";
 
 .wimfr-page {
+  background-color: $bkgd-blue;
+}
+
+.wimfr-content {
   max-width: 1200px;
+  margin: 0 auto;
+
   display: grid;
   justify-items: center;
   margin-bottom: 50px;
