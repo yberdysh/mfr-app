@@ -4,6 +4,7 @@ import Review from "../../components/Review";
 import Conditions from "../../components/Conditions";
 import FaqSection from "../../components/FaqSection";
 import Section from "../../components/Section";
+import ListSection from "../../components/ListSection";
 
 function WhatIsMFR() {
   function handleBooking() {
@@ -75,6 +76,31 @@ function WhatIsMFR() {
           content="I was genuinely baffled by how much my body seemed to react. 
         It made me feel much lighter and even has a strangely meditative effect 
         on your thoughts and emotions."
+        />
+        <ListSection
+          title="Imagine Yourself"
+          content={
+            <ul>
+              <li>Without chronic or unexplained pain</li>
+              <li>Feeling free in your body</li>
+              <li>Being a more patient parent and partner</li>
+              <li>Feeling limitless and full of boundless energy</li>
+              <li>Your athletic performance at its most optimal</li>
+              <li>Feeling connected, not dissociated</li>
+              <li>Playing with your dog, kids, or grandkids on the floor</li>
+              <li>Doing hobbies and activities you love</li>
+              <li>Dissolving stuckness in your life</li>
+              <li>Traveling anywhere in the world without pain or stiffness</li>
+              <li>Having a connected and radiant transition into motherhood</li>
+              <li>Finally letting go of shame, grief, fear, and despair</li>
+              <li>Your athletic performance at its most optimal</li>
+              <li>
+                Feeling the freedom, hope, and excitement of endless
+                possibilities
+              </li>
+              <li>Thriving, not just living</li>
+            </ul>
+          }
         />
         <Conditions />
         <FaqSection />
