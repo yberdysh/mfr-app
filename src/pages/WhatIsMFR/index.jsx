@@ -21,22 +21,35 @@ function WhatIsMFR() {
                 <div>
                   <h3>What is Fascia?</h3>
                   <p>
-                    MFR is a gentle hands-on bodywork approach where the
-                    therapist applies sustained pressure to the body in order to
-                    release fascial restrictions. Your fascia is the connective
-                    tissue web throughout your body touching every muscle, bone,
-                    and organ. Through the pizoelectric effect, we can tap into
-                    the ground substance and collagenous barrier of this 3D
-                    matrix, and relieve the 2,000 lbs of crushing pressure on
-                    pain-sensitive structures.
+                    Fascia is the 3D web of connective tissue that surrounds
+                    every bone, muscle, and organ in your body. It is both
+                    protective and adaptive. It holds your organs in place and
+                    responds to any stress that you experience. It tightens as a
+                    result of trauma, injury, poor posture, and lack of
+                    movement. Often the root cause of chronic pain, fascia also
+                    stores tissue memory and emotions from unresolved
+                    experiences.
                   </p>
-                  <h3>What is Fascia?</h3>
+                  <h3>What is MFR?</h3>
                   <p>
-                    MFR is meant to be experienced. You will not get a good
-                    understanding of how MFR feels through google searching or
-                    reading about it – it may just lead you, gentle reader, into
-                    more confusion and pull you away from trying it out for
-                    yourself.
+                    Myofascial release therapy is a hands-on bodywork that
+                    effectively dissolves any blockers or restrictions in your
+                    body, both physical and emotional. I as the therapist do
+                    this through first assessing your posture and restrictions,
+                    and then applying intentional and sustained pressure to
+                    release them.
+                  </p>
+                  <p>
+                    MFR gets your body free and moving again after injury,
+                    illness, or poor posture. It helps you break free of trauma
+                    and let go of difficult emotions. It gets you unstuck when
+                    you’re feeling stuck in life or in your body. The best way
+                    to understand it is to experience it for yourself.
+                  </p>
+                  <p>
+                    What if healing is about removing everything that’s holding
+                    you back and letting your body do the rest?
+                    <p>Ready to let go and heal? </p>
                   </p>
                 </div>
               ),
@@ -57,31 +70,7 @@ function WhatIsMFR() {
             },
           ]}
         />
-        <Section
-          sections={[
-            {
-              content: (
-                <div style={{ maxWidth: "700px" }}>
-                  <h3 style={{ textAlign: "center" }}>
-                    So then…what does MFR actually feel like during a session?
-                  </h3>
-                  <p>
-                    MFR feels like magic. You may feel deeply relaxed and fall
-                    asleep. You may feel your body moving around as it
-                    intuitively moves to get unstuck and reintegrates itself.
-                    You may feel yourself getting unblocked or energy moving
-                    within you in real time. If you allow yourself, you may feel
-                    emotions come up. You may feel an incredible relief and
-                    sense of complete release as a pain you’ve had for a decade
-                    disintegrates under the therapist’s hands. Or, it may feel
-                    uneventful as fascia is quietly releasing, and you’ll find
-                    some affects afterward.
-                  </p>
-                </div>
-              ),
-            },
-          ]}
-        />
+        <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
         <Review
           content="I was genuinely baffled by how much my body seemed to react. 
         It made me feel much lighter and even has a strangely meditative effect 
@@ -91,7 +80,7 @@ function WhatIsMFR() {
         <FaqSection />
         <div className="wimfr-content__review-section">
           <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
-          <Review content="The pain I’ve been lliving with in my neck and shoulder for 10 years is gone. I’m amazed." />
+          <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
           <button
             className="wimfr-content__review-section__button"
             onClick={handleBooking}
