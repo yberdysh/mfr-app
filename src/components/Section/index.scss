@@ -6,10 +6,12 @@
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
   display: flex;
   flex-direction: column;
-  padding: 25px 16px;
+  margin: 25px 16px;
   gap: 25px;
 
   @include mq(s) {
+  }
+  @include mq(m) {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -19,13 +21,11 @@
     &[data-ratio="two-thirds"] {
       grid-template-columns: 2fr 1fr;
     }
-  }
-  @include mq(m) {
-    gap: 50px;
-    padding: 50px 25px;
+    // gap: 50px;
+    margin: 50px 25px;
   }
   @include mq(xl) {
-    padding: 50px 0;
+    margin: 50px 0;
   }
 
   &.visible {

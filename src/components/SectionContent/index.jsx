@@ -1,4 +1,4 @@
-import './index.scss';
+import "./index.scss";
 
 function SectionContent({
   content,
@@ -7,6 +7,7 @@ function SectionContent({
   imageCaption,
   buttons,
   imageTall,
+  imageId,
 }) {
   function buttonHandler(link) {
     // do the thing
@@ -21,6 +22,7 @@ function SectionContent({
             src={image}
             alt={imageAlt}
             data-tall={imageTall}
+            id={imageId}
           />
           {imageCaption && (
             <div className="section-content__caption-container">

@@ -1,16 +1,16 @@
-import './index.scss';
-import SectionContent from '../SectionContent';
-import lazyLoad from '../../utils/lazyload';
+import "./index.scss";
+import SectionContent from "../SectionContent";
+import lazyLoad from "../../utils/lazyload";
 
 function Section({ sections, ratio }) {
   const sectionRef = lazyLoad();
 
   function setRatioWidth() {
     switch (ratio) {
-      case '2:1':
-        return 'two-thirds';
+      case "2:1":
+        return "two-thirds";
       default:
-        return 'default';
+        return "default";
     }
   }
 
@@ -27,6 +27,7 @@ function Section({ sections, ratio }) {
           imageCaption={section.imageCaption}
           buttons={section.buttons}
           imageTall={section.imageTall}
+          imageId={section.id}
         />
       ))}
     </div>
