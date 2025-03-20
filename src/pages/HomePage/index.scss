@@ -7,11 +7,72 @@
 .home-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 25px;
 
-  .banner-image {
-    max-width: 1200px;
+  @include mq(m) {
+    padding-bottom: 50px;
   }
-  .banner {
-    margin: 32px;
+
+  &__banner {
+    display: grid;
+    place-items: center; // Centers both horizontally and vertically
+    position: relative;
+
+    &__image {
+      max-width: 1200px;
+      width: 100%;
+      grid-area: 1 / 1;
+    }
+    &__text {
+      grid-area: 1 / 1; // Ensures the text is in the same grid area as the image
+      text-align: center;
+      color: $white;
+      align-self: start;
+      font-size: 35px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      @include mq(s) {
+        padding: 0;
+        font-size: 50px;
+        max-width: 600px;
+      }
+      @include mq(m) {
+        font-size: 65px;
+        max-width: 900px;
+      }
+      @include mq(xl) {
+        font-size: 75px;
+        max-width: 1000px;
+      }
+    }
+  }
+
+  &__welcome {
+    font-size: 45px;
+    color: $teal-2;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .section-content__content {
+    .home-content__section {
+      p {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+      ul {
+        margin: 0;
+      }
+      li {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .section-content__image-container {
+    #lady-fascia {
+      max-width: 600px;
+    }
   }
 }

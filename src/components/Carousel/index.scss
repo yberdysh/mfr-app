@@ -1,0 +1,50 @@
+@import "../../styles/index.scss";
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: grid;
+    gap: 16px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 18px;
+    grid-template-columns: repeat(1, 1fr); // 1 item
+
+    @include mq(s) {
+      grid-template-columns: repeat(2, 1fr); // 2 items
+    }
+    @include mq(xl) {
+      grid-template-columns: repeat(3, 1fr); // 3 items
+    }
+  }
+
+  &__item {
+    padding: 16px;
+    text-align: center;
+    background-color: $sky-blue;
+    border: 2px solid $text-brown;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+    .review {
+      &__text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+
+    .carousel__button {
+      @include button($button-blue, $white);
+    }
+  }
+}

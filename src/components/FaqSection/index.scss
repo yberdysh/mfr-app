@@ -4,18 +4,18 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-  padding-bottom: 25px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-bottom: 25px;
+  margin-left: 16px;
+  margin-right: 16px;
 
   @include mq(m) {
-    padding-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   @include mq(xl) {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &.visible {
