@@ -1,0 +1,175 @@
+@import "../../styles/index.scss";
+
+.footer-container {
+  width: 100%;
+  background-color: $sky-blue;
+  z-index: 100;
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
+.footer {
+  padding: 25px 16px;
+
+  @include mq(m) {
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  @media (min-width: 1200px) {
+    grid-column: 2;
+  }
+  @include mq(xl) {
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1.25fr 3fr;
+    gap: 125px;
+  }
+
+  &__first-part {
+    display: grid;
+    justify-content: center;
+
+    .header {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      align-items: center;
+
+      @include mq(s) {
+        gap: 10px;
+      }
+      @include mq(xl) {
+        justify-content: start;
+        gap: 0;
+      }
+
+      &__logo {
+        width: 50px;
+        height: 40px;
+
+        @include mq(s) {
+          width: 80px;
+          height: 60px;
+        }
+      }
+      &__text {
+        font-size: 28px;
+        font-family: "Lavishyly Yours", cursive;
+        font-weight: 700;
+
+        @include mq(s) {
+          font-size: 40px;
+        }
+        @include mq(xl) {
+          margin-left: -40px;
+        }
+      }
+    }
+
+    p {
+      text-align: left;
+      max-width: 700px;
+
+      @include mq(xl) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(s) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @include mq(xl) {
+      justify-content: space-between;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @include mq(s) {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__header {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+    }
+    &__nav {
+      font-size: 16px;
+      color: $white;
+      text-align: left;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+
+    &__header {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+    }
+    &__contact-method {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding-bottom: 5px;
+
+      &[data-larger-icon="true"] {
+        gap: 8px;
+
+        .contact-img {
+          width: 20px;
+          padding-left: 0;
+        }
+      }
+
+      .contact-img {
+        width: 14px;
+        height: 100%;
+        padding-left: 3px;
+      }
+      .contact-label {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__other {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+
+    &__header {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+    }
+    &__link {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}
