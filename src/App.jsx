@@ -7,6 +7,7 @@ import Navbar from "./components/NavBar";
 import WhatIsMFR from "./pages/WhatIsMFR";
 import ScrollToTop from "./utils/scrollToTop";
 import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Routes>
         </div>
       </ScrollToTop>
+      <Footer />
     </Router>
   );
 }
