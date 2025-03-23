@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./index.scss";
 import { BREAKPOINTS } from "../../utils/getBreakpoint";
 import Logo from "../Logo";
@@ -7,6 +7,7 @@ import Logo from "../Logo";
 function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const navigate = useNavigate();
 
   // Makes navbar go away when you scroll down, and reappear when you scroll up
   useEffect(() => {
@@ -56,7 +57,7 @@ function NavBar() {
   }, []);
 
   function handleBooking() {
-    // booking logic goes here...
+    navigate("/booking");
     setIsMobileNavOpen(false);
   }
 

@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+.booking-page {
+  background-color: $teal;
+}
+
+.booking-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  padding: 25px 16px;
+
+  @include mq(m) {
+    padding: 50px 25px;
+  }
+  @include mq(xl) {
+    padding: 50px 0;
+  }
+
+  &__title {
+  }
+
+  &__body {
+    text-align: left;
+  }
+
+  h2 {
+    padding-top: 25px;
+  }
+}
