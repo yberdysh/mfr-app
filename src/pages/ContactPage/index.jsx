@@ -4,17 +4,42 @@ import React, { useState } from "react";
 function ContactPage() {
   const [name, setName] = useState(""); // Add state for name
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [body, setBody] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:ladyfascia@myofascialawakening.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}%0A%0AFrom: ${encodeURIComponent(
-      name
-    )} (${encodeURIComponent(email)})`;
-    window.location.href = mailtoLink;
+
+    const formData = {
+      name,
+      email,
+      message,
+    };
+
+    try {
+      const response = await fetch(
+        "https://lady-fascia-gmail-server.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+      } else {
+        alert(
+          "Something went wrong. Please try again later or email ladyfascia@myofascialawakening.com."
+        );
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert(
+        "Something went wrong. Please try again later or email ladyfascia@myofascialawakening.com."
+      );
+    }
   };
 
   return (
@@ -44,21 +69,11 @@ function ContactPage() {
             />
           </div>
           <div className="email-form__field">
-            <label htmlFor="subject">Message Subject</label>
-            <input
-              type="text"
-              id="subject"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              required
-            />
-          </div>
-          <div className="email-form__field">
-            <label htmlFor="body">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
-              id="body"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             />
           </div>
