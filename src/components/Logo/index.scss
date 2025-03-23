@@ -1,0 +1,47 @@
+@import "../../styles/index.scss";
+
+.logo {
+  font-size: 28px;
+  @include adlery_swash(700);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  a {
+    position: relative;
+  }
+
+  @include mq(m) {
+    font-size: 40px;
+  }
+
+  &__image {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 34px;
+    left: 0;
+
+    @include mq(m) {
+      width: 70px;
+      height: 50px;
+      top: 46px;
+    }
+  }
+  &__text {
+    max-width: 180px;
+    line-height: 35px;
+    text-align: left;
+
+    span:nth-child(2) {
+      padding-left: 45px;
+
+      @include mq(m) {
+        padding-left: 75px;
+      }
+    }
+    @include mq(m) {
+      line-height: 50px;
+    }
+  }
+}

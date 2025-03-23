@@ -108,7 +108,18 @@ function AboutPage() {
                     which I’d been feeling for a year at that point. So I kept
                     going for treatment- each session feeling more free.
                   </p>
-                  <p>Spoiler alert- I unlocked my shoulder and so much more.</p>
+                  <p>
+                    And I've also learned that trauma doesn't have to be
+                    something you live with and learn to cope with while putting
+                    on a brave face. I didn't know that it could actually leave
+                    your body, but it can.{" "}
+                  </p>
+                  <p>
+                    It is now my greatest mission to ease human suffering. The
+                    less we are suffering, the more we are living in the energy
+                    of love, kindness, joy, and the more awakened we become. As
+                    a result, the whole world changes.{" "}
+                  </p>
                   <p>
                     The better it gets, the better it gets. What if healing
                     isn’t about doing anything, but about undoing what you’d

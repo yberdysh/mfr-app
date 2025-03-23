@@ -32,16 +32,6 @@
     padding: 25px 0;
   }
 
-  .navbar-brand {
-    font-size: 28px;
-    font-family: "Lavishyly Yours", cursive;
-    font-weight: 700;
-
-    @include mq(s) {
-      font-size: 40px;
-    }
-  }
-
   a {
     color: $white;
     text-decoration: none;
@@ -57,7 +47,7 @@
   }
 
   .navbar-links {
-    font-family: "Gentium Plus", serif;
+    @include open_sans();
 
     &[data-is-active="false"] {
       display: none;
@@ -102,7 +92,6 @@
     }
 
     a {
-      font-family: "Lavishyly Yours", cursive;
       font-size: 25px;
     }
 

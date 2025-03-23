@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 import { BREAKPOINTS } from "../../utils/getBreakpoint";
+import Logo from "../Logo";
 
 function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -18,7 +19,7 @@ function NavBar() {
         if (prevScrollPos > currentScrollPos) {
           if (nav) nav.style.top = "0";
         } else {
-          if (nav) nav.style.top = "-110px";
+          if (nav) nav.style.top = "-150px";
         }
       } else {
         if (nav) nav.style.top = "0";
@@ -70,11 +71,7 @@ function NavBar() {
   return (
     <div className="navbar-container" id="nav">
       <nav className="navbar">
-        <div className="navbar-brand">
-          <Link to="/" onClick={() => setIsMobileNavOpen(false)}>
-            Myofascial Awakening
-          </Link>
-        </div>
+        <Logo clickFunction={() => setIsMobileNavOpen(false)} />
         <div className="navbar-links" data-is-active={isMobileNavOpen}>
           <Link
             className="navbar-links__link"

@@ -3,7 +3,6 @@ import logo from "../../assets/logo.png";
 import mailIcon from "../../assets/mail-icon.png";
 import locationIcon from "../../assets/location-icon-2.png";
 import phoneIcon from "../../assets/phone-icon-2.png";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
