@@ -1,4 +1,5 @@
 import "./index.scss";
+import { useNavigate } from "react-router-dom";
 
 function SectionContent({
   content,
@@ -9,8 +10,11 @@ function SectionContent({
   imageTall,
   imageId,
 }) {
+  const navigate = useNavigate();
+
   function buttonHandler(link) {
-    // do the thing
+    console.log("link: ", link);
+    navigate(link);
   }
 
   return (
@@ -39,7 +43,7 @@ function SectionContent({
           {buttons.map((button, index) => (
             <button
               key={index}
-              onClick={buttonHandler(button.link)}
+              onClick={() => buttonHandler(button.link)}
               data-color={button.type}
             >
               {button.text}

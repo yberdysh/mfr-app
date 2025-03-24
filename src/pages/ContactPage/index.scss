@@ -51,7 +51,8 @@
       border: 1px solid $other-bkg-blue;
       border-radius: 5px;
       // background-color: $other-bkg-blue;
-      background-color: $bkgd-yellow;
+      // background-color: $bkgd-yellow;
+      background-color: $beige;
       color: $text-brown;
     }
 
@@ -63,11 +64,14 @@
 
   &__button {
     // @include button($button-blue, $white);
-    @include button($bkgd-yellow, $white);
+    @include button($bkgd-yellow, $text-brown);
     font-size: 16px;
 
     @include mq(s) {
       font-size: 20px;
+      width: 100%;
+      max-width: 300px;
+      align-self: center;
     }
   }
 }

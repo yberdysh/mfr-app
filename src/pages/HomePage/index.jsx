@@ -69,7 +69,7 @@ function HomePage() {
               buttons: [
                 {
                   text: "Book Now",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "blue",
                 },
               ],
@@ -103,12 +103,12 @@ function HomePage() {
               buttons: [
                 {
                   text: "Read my Story",
-                  link: "www.google.com",
+                  link: "/about",
                   type: "blue",
                 },
                 {
                   text: "What is MFR",
-                  link: "www.google.com",
+                  link: "/what-is-mfr",
                   type: "blue",
                 },
               ],
@@ -139,7 +139,7 @@ function HomePage() {
               buttons: [
                 {
                   text: "Book Now",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "blue",
                 },
               ],

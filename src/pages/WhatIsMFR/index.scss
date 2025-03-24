@@ -22,7 +22,7 @@
 
     &__button {
       max-width: 210px;
-      @include button($bkgd-yellow, $white);
+      @include button($bkgd-yellow, $text-brown);
     }
   }
 }

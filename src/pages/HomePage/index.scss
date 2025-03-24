@@ -28,22 +28,23 @@
       text-align: center;
       color: $white;
       align-self: start;
-      font-size: 35px;
-      padding-left: 16px;
-      padding-right: 16px;
+      font-size: 36px;
+      padding-left: 36px;
+      padding-right: 36px;
+      @include open_sans(700);
 
       @include mq(s) {
         padding: 0;
         font-size: 50px;
-        max-width: 600px;
+        max-width: 590px;
       }
       @include mq(m) {
         font-size: 65px;
-        max-width: 900px;
+        max-width: 850px;
       }
       @include mq(xl) {
         font-size: 75px;
-        max-width: 1000px;
+        max-width: 900px;
       }
     }
   }

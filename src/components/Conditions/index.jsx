@@ -1,9 +1,15 @@
 import "./index.scss";
 import check from "../../assets/check.png";
 import lazyLoad from "../../utils/lazyload";
+import { useNavigate } from "react-router-dom";
 
 function Conditions() {
   const sectionRef = lazyLoad();
+  const navigate = useNavigate();
+
+  function handleBooking() {
+    navigate("/booking");
+  }
 
   const conditionsArr = [
     "Fibromyalgia",
@@ -51,7 +57,9 @@ function Conditions() {
         ))}
       </div>
       <div className="conditions__and-more">And more...</div>
-      <button className="conditions__button">Book Now</button>
+      <button className="conditions__button" onClick={handleBooking}>
+        Book Now
+      </button>
     </div>
   );
 }
