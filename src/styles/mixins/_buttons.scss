@@ -23,4 +23,13 @@
     color: $background-color;
     background-color: $text-color;
   }
+
+  @if $background-color == $bkgd-yellow {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $text-color;
+      background-color: $white;
+    }
+  }
 }

@@ -89,7 +89,7 @@
         @include button($button-blue, $white);
       }
       &[data-color="yellow"] {
-        @include button($bkgd-yellow, $white);
+        @include button($bkgd-yellow, $text-brown);
       }
     }
   }

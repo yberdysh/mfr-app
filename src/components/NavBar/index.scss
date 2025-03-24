@@ -96,7 +96,7 @@
     }
 
     .action-button {
-      @include button($bkgd-yellow, $white);
+      @include button($bkgd-yellow, $text-brown);
     }
   }
 

@@ -5,10 +5,13 @@ import Conditions from "../../components/Conditions";
 import FaqSection from "../../components/FaqSection";
 import Section from "../../components/Section";
 import ListSection from "../../components/ListSection";
+import { useNavigate } from "react-router-dom";
 
 function WhatIsMFR() {
+  const navigate = useNavigate();
+
   function handleBooking() {
-    //booking logic goes here...
+    navigate("/booking");
   }
 
   return (
