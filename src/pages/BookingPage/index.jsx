@@ -27,13 +27,13 @@ function BookingPage() {
           </p>
         </div>
 
-        <iframe
+        {/* <iframe
           src="https://app.acuityscheduling.com/schedule.php?owner=35210616&ref=embedded_csp"
           title="Schedule Appointment"
           width="100%"
           height="800"
           frameBorder="0"
-        ></iframe>
+        ></iframe> */}
 
         {/* <h2>Massage Book POC</h2>
         <iframe
