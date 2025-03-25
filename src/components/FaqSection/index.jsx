@@ -1,7 +1,7 @@
 import "./index.scss";
 import lazyLoad from "../../utils/lazyload";
 import Accordion from "../Accordion";
-import mfrRelease from "../../assets/homepage-image-4.jpg";
+import mfrRelease from "../../assets/homepage-image-5.jpg";
 
 function FaqSection() {
   const sectionRef = lazyLoad();
