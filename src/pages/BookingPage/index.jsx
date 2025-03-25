@@ -42,6 +42,11 @@ function BookingPage() {
             possibility.
           </p>
           <p>
+            <b>NOTE: </b>Please contact me directly to schedule a 90 or 120 min
+            session, or to discuss sliding scale options if you are struggling
+            financially.
+          </p>
+          <p>
             Please text/call/email at 484-929-3680 or
             ladyfascia@myofascialawakening.com with any questions or concerns.
           </p>
