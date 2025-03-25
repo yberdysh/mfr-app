@@ -27,16 +27,15 @@ function BookingPage() {
           </p>
         </div>
 
-        <h2>Acuity POC</h2>
-        <iframe
+        {/* <iframe
           src="https://app.acuityscheduling.com/schedule.php?owner=35210616&ref=embedded_csp"
           title="Schedule Appointment"
           width="100%"
           height="800"
           frameBorder="0"
-        ></iframe>
+        ></iframe> */}
 
-        <h2>Massage Book POC</h2>
+        {/* <h2>Massage Book POC</h2>
         <iframe
           src="https://www.massagebook.com/therapists/myofascial-awakening/widget/services"
           frameborder="0"
@@ -57,7 +56,7 @@ function BookingPage() {
           >
             Request Appointment
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

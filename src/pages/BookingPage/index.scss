@@ -23,6 +23,11 @@
 
   &__body {
     text-align: left;
+    padding-bottom: 10px;
+
+    @include mq(m) {
+      padding-bottom: 25px;
+    }
   }
 
   h2 {

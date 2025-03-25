@@ -9,6 +9,7 @@
 
   a {
     position: relative;
+    color: $white;
   }
 
   @include mq(m) {

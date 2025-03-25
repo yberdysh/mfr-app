@@ -31,7 +31,7 @@ function AboutPage() {
               buttons: [
                 {
                   text: "Book a Session",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "yellow",
                 },
               ],
@@ -70,12 +70,12 @@ function AboutPage() {
               buttons: [
                 {
                   text: "Learn about MFR",
-                  link: "www.google.com",
+                  link: "/what-is-mfr",
                   type: "yellow",
                 },
                 {
                   text: "Book a Session",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "yellow",
                 },
               ],
@@ -132,12 +132,12 @@ function AboutPage() {
               buttons: [
                 {
                   text: "What is MFR?",
-                  link: "www.google.com",
+                  link: "/what-is-mfr",
                   type: "yellow",
                 },
                 {
                   text: "Book a Session",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "yellow",
                 },
               ],

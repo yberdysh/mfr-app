@@ -3,17 +3,20 @@ import logo from "../../assets/logo.png";
 import mailIcon from "../../assets/mail-icon.png";
 import locationIcon from "../../assets/location-icon-2.png";
 import phoneIcon from "../../assets/phone-icon-2.png";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import Logo from "../Logo";
 
 function Footer() {
+  const navigate = useNavigate();
+  function handleLogo() {
+    navigate("/");
+  }
+
   return (
     <div className="footer-container" id="footer">
       <div className="footer">
         <div className="footer__first-part">
-          <div className="header">
-            <img src={logo} className="header__logo" alt="Lady Fascia Logo" />
-            <div className="header__text">Myofascial Awakening</div>
-          </div>
+          <Logo />
           <p>
             Powered by Lady Fascia- your local myofascial release therapist and
             conscious homebirth doula serving the Lehigh Valley: Allentown,
@@ -35,8 +38,9 @@ function Footer() {
             <Link className="footer__navigation__nav" to="/contact">
               Contact
             </Link>
-            {/* TODO: add onclick with booking logic */}
-            <p className="footer__navigation__nav">Book</p>
+            <Link className="footer__navigation__nav" to="/booking">
+              Book Now
+            </Link>
           </div>
           <div className="footer__contact">
             <div className="footer__contact__header">Get in Touch</div>
@@ -63,7 +67,7 @@ function Footer() {
             <div className="footer__other__header">Something Else?</div>
             {/* TODO: replace with links */}
             <div className="footer__other__link">Doula Services</div>
-            <div className="footer__other__link">Enlightenment Blog</div>
+            {/* <div className="footer__other__link">Enlightenment Blog</div> */}
             <div className="footer__other__link">Learn about Lady Fascia</div>
           </div>
         </div>

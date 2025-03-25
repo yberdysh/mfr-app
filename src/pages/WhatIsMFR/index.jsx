@@ -5,10 +5,13 @@ import Conditions from "../../components/Conditions";
 import FaqSection from "../../components/FaqSection";
 import Section from "../../components/Section";
 import ListSection from "../../components/ListSection";
+import { useNavigate } from "react-router-dom";
 
 function WhatIsMFR() {
+  const navigate = useNavigate();
+
   function handleBooking() {
-    //booking logic goes here...
+    navigate("/booking");
   }
 
   return (
@@ -65,18 +68,19 @@ function WhatIsMFR() {
             {
               image: skeleton,
               imageAlt: "Practical example of restrictions on human body",
-              imageCaption:
-                "A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture",
+              // imageCaption:
+              //   "A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture",
               imageTall: true,
             },
           ]}
         />
-        <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
+        {/* <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
         <Review
           content="I was genuinely baffled by how much my body seemed to react. 
         It made me feel much lighter and even has a strangely meditative effect 
         on your thoughts and emotions."
-        />
+        /> */}
+        <Conditions />
         <ListSection
           title="Imagine Yourself"
           content={
@@ -102,11 +106,16 @@ function WhatIsMFR() {
             </ul>
           }
         />
-        <Conditions />
+
         <FaqSection />
         <div className="wimfr-content__review-section">
           <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
-          <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
+          <Review content="Prior to working with Yevgeniya, I could'nt life my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!" />
+          <Review
+            content="I was genuinely baffled by how much my body seemed to react. 
+        It made me feel much lighter and even has a strangely meditative effect 
+        on your thoughts and emotions."
+          />
           <button
             className="wimfr-content__review-section__button"
             onClick={handleBooking}

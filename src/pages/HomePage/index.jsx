@@ -3,7 +3,9 @@ import treatment from "../../assets/treatment-room.jpeg";
 import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
-import image3 from "../../assets/homepage-image-3.jpeg";
+// import image3 from "../../assets/homepage-image-3.jpeg";
+import image4 from "../../assets/mfr-example.jpeg";
+
 import Carousel from "../../components/Carousel";
 
 function HomePage() {
@@ -69,7 +71,7 @@ function HomePage() {
               buttons: [
                 {
                   text: "Book Now",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "blue",
                 },
               ],
@@ -103,12 +105,12 @@ function HomePage() {
               buttons: [
                 {
                   text: "Read my Story",
-                  link: "www.google.com",
+                  link: "/about",
                   type: "blue",
                 },
                 {
                   text: "What is MFR",
-                  link: "www.google.com",
+                  link: "/what-is-mfr",
                   type: "blue",
                 },
               ],
@@ -123,7 +125,7 @@ function HomePage() {
         <Section
           sections={[
             {
-              image: image3,
+              image: image4,
               imageAlt: "Woman using MFR",
             },
             {
@@ -139,7 +141,7 @@ function HomePage() {
               buttons: [
                 {
                   text: "Book Now",
-                  link: "www.google.com",
+                  link: "/booking",
                   type: "blue",
                 },
               ],
