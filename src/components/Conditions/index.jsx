@@ -38,11 +38,12 @@ function Conditions() {
     "Pregnancy",
     "Post Cancer Treatment",
     "Sports Injuries",
-    "Trauma",
-    "Postpartum",
+    "Birth Trauma",
+    "Miscarriage",
     "Poor Posture",
-    "Irregular Cycle",
+    "Irregular Cycles",
     "Sleep Disturbances",
+    "Breech Babies",
   ];
 
   return (

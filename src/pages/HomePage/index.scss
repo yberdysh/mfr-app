@@ -31,7 +31,8 @@
       font-size: 36px;
       padding-left: 36px;
       padding-right: 36px;
-      @include open_sans(700);
+      // @include cinzel(700);
+      @include copperplate_gothic(700);
 
       @include mq(s) {
         padding: 0;
