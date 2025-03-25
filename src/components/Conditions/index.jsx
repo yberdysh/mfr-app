@@ -24,7 +24,7 @@ function Conditions() {
     "Scarring",
     "Hip Pain",
     "PTSD",
-    "Depression",
+    "Breathing Issues",
     "Fertility",
     "Poor Range of Motion",
     "Whiplash",

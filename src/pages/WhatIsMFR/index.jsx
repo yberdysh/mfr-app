@@ -80,6 +80,7 @@ function WhatIsMFR() {
         It made me feel much lighter and even has a strangely meditative effect 
         on your thoughts and emotions."
         /> */}
+        <Conditions />
         <ListSection
           title="Imagine Yourself"
           content={
@@ -105,11 +106,16 @@ function WhatIsMFR() {
             </ul>
           }
         />
-        <Conditions />
+
         <FaqSection />
         <div className="wimfr-content__review-section">
           <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
-          <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
+          <Review content="Prior to working with Yevgeniya, I could'nt life my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!" />
+          <Review
+            content="I was genuinely baffled by how much my body seemed to react. 
+        It made me feel much lighter and even has a strangely meditative effect 
+        on your thoughts and emotions."
+          />
           <button
             className="wimfr-content__review-section__button"
             onClick={handleBooking}
