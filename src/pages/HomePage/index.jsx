@@ -19,9 +19,12 @@ function HomePage() {
             alt="treatment room"
           />
           <h1 className="home-content__banner__text">
-            It’s time to free yourself of pain and trauma, and awaken your
+            It's time to free yourself of pain and trauma, and awaken your
             potential
           </h1>
+          {/* <h1 className="home-content__banner__text">
+            Come for the pain relief, stay for the emotional freedom
+          </h1> */}
         </div>
 
         <Section
