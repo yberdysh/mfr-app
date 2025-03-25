@@ -3,8 +3,8 @@ import treatment from "../../assets/treatment-room.jpeg";
 import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
-// import image3 from "../../assets/homepage-image-3.jpeg";
-import image4 from "../../assets/mfr-example.jpeg";
+import image4 from "../../assets/homepage-image-4.jpg";
+import image5 from "../../assets/homepage-image-5.jpg";
 
 import Carousel from "../../components/Carousel";
 
@@ -42,11 +42,6 @@ function HomePage() {
         <Section
           sections={[
             {
-              image: image1,
-              imageAlt: "Lady Fascia",
-              id: "lady-fascia",
-            },
-            {
               content: (
                 <div className="home-content__section">
                   <p>
@@ -79,11 +74,20 @@ function HomePage() {
                 },
               ],
             },
+            {
+              image: image1,
+              imageAlt: "Lady Fascia",
+              id: "lady-fascia",
+            },
           ]}
         />
 
         <Section
           sections={[
+            {
+              image: image4,
+              imageAlt: "Man using MFR",
+            },
             {
               content: (
                 <div className="home-content__section">
@@ -118,27 +122,28 @@ function HomePage() {
                 },
               ],
             },
-            {
-              image: image2,
-              imageAlt: "Woman using MFR",
-            },
           ]}
         />
 
         <Section
           sections={[
             {
-              image: image4,
-              imageAlt: "Woman using MFR",
-            },
-            {
               content: (
                 <div className="home-content__section">
-                  <p>Still unsure if it’s for you?</p>
-                  <p>
-                    Even if nothing is currently hurting, MFR can help you excel
-                    and unlock your highest potential.
-                  </p>
+                  <p>Still unsure if MFR is for you? Give it a try if...</p>
+                  <ul>
+                    <li>
+                      you're feeling pain and discomfort anywhere if your body
+                    </li>
+                    <li>
+                      you're feeling like you can’t let go of your past and have
+                      trauma holding you back
+                    </li>
+                    <li>
+                      feel fine but just want to accelerate to the next level
+                      and unlock your highest potential
+                    </li>
+                  </ul>
                 </div>
               ),
               buttons: [
@@ -148,6 +153,10 @@ function HomePage() {
                   type: "blue",
                 },
               ],
+            },
+            {
+              image: image2,
+              imageAlt: "Woman using MFR",
             },
           ]}
         />
