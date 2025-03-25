@@ -68,18 +68,18 @@ function WhatIsMFR() {
             {
               image: skeleton,
               imageAlt: "Practical example of restrictions on human body",
-              imageCaption:
-                "A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture",
+              // imageCaption:
+              //   "A practical example of fascial restrictions at play and how overcompensating for pain leads to more restrictions and compromises posture",
               imageTall: true,
             },
           ]}
         />
-        <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
+        {/* <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
         <Review
           content="I was genuinely baffled by how much my body seemed to react. 
         It made me feel much lighter and even has a strangely meditative effect 
         on your thoughts and emotions."
-        />
+        /> */}
         <ListSection
           title="Imagine Yourself"
           content={

@@ -3,7 +3,9 @@ import treatment from "../../assets/treatment-room.jpeg";
 import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
-import image3 from "../../assets/homepage-image-3.jpeg";
+// import image3 from "../../assets/homepage-image-3.jpeg";
+import image4 from "../../assets/mfr-example.jpeg";
+
 import Carousel from "../../components/Carousel";
 
 function HomePage() {
@@ -123,7 +125,7 @@ function HomePage() {
         <Section
           sections={[
             {
-              image: image3,
+              image: image4,
               imageAlt: "Woman using MFR",
             },
             {
