@@ -13,6 +13,11 @@ function FaqSection() {
         "The less prepared you are, the better. Come with an open mind. Don’t wear lotions or oils. Wear loose clothing or shorts/underwear and sports bra. Take down your walls, don’t suppress, and just allow your body to do what it needs to heal.",
     },
     {
+      title: "What's the difference between massage and MFR?",
+      content:
+        "Massage uses lotion or oil and follows a structured routine, primarily working on muscles with continuous movement. While it can provide temporary relief, it doesn’t apply the sustained pressure needed to provide a complete release. MFR, on the other hand, focuses only on the areas that need attention, using gentle, sustained pressure without lotion or oil. This allows for a deeper release in the tissues. Although we don't touch every area during a session, you will be surpirsed how much long-lasting change you feel throughout your entire body. This is because fascia is all connected, so when we release one area, it affects the whole body.",
+    },
+    {
       title: "What will I feel during an MFR session? ",
       content:
         "Everyone experiences MFR differently. You may feel warmth, pulsation, energy flowing, or a connection to another part of your body. You may feel your body moving around as it intuitively moves to get unstuck and reintegrates itself. If you allow yourself, you may feel emotions come up. You may feel incredible relief and sense of complete release.You may also not feel much during a session other than deep relaxation as the fascia is quietly releasing. ",

@@ -8,8 +8,12 @@ function BookingPage() {
         <div className="booking-content__body">
           <h2>Please review before booking: </h2>
 
-          <h3>Appointment Cancellations and Rescheduling</h3>
-
+          <h3>Appointments, Cancellations, and Rescheduling</h3>
+          <p>
+            Please pay in full when booking your appointment. This establishment
+            does not collect tips, as prices are already set to reflect the
+            value of the service provided.
+          </p>
           <p>
             Your appointment time(s) are reserved specifically for you. If you
             cancel a session with less than 24 hours notice, or do not show for
