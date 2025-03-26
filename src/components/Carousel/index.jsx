@@ -49,6 +49,9 @@ function Carousel({ carouselItems, isReviews }) {
     );
   }
 
+  // Check if buttons should be hidden
+  const shouldHideButtons = carouselItems.length <= itemsToShow;
+
   return (
     <div className="carousel">
       <div className="carousel__content">
@@ -64,14 +67,16 @@ function Carousel({ carouselItems, isReviews }) {
           )
         )}
       </div>
-      <div className="carousel__controls">
-        <button onClick={handlePrev} className="carousel__button">
-          Prev
-        </button>
-        <button onClick={handleNext} className="carousel__button">
-          Next
-        </button>
-      </div>
+      {!shouldHideButtons && (
+        <div className="carousel__controls">
+          <button onClick={handlePrev} className="carousel__button">
+            Prev
+          </button>
+          <button onClick={handleNext} className="carousel__button">
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 }
