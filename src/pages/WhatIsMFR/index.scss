@@ -17,12 +17,24 @@
 
   &__review-section {
     display: grid;
-    gap: 20px;
+    gap: 40px;
     justify-items: center;
+
+    @include mq(m) {
+      gap: 50px;
+    }
+
+    .carousel__item {
+      // background-color: $teal-3;
+    }
 
     &__button {
       max-width: 210px;
       @include button($bkgd-yellow, $text-brown);
     }
   }
+}
+
+.first-section__title {
+  font-size: 2em;
 }

@@ -100,6 +100,8 @@ function WhatIsMFR() {
                 <li>
                   <img src={ArrowIcon} alt="arrow icon" />
                   <span>Healing without the surgery that was recommended</span>
+                </li>
+                <li>
                   <img src={ArrowIcon} alt="arrow icon" />
                   <span>Being a more patient parent and partner</span>
                 </li>
@@ -179,7 +181,7 @@ function WhatIsMFR() {
               },
               {
                 content:
-                  "Prior to working with Yevgeniya, I could'nt life my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!",
+                  "Prior to working with Yevgeniya, I could'nt lift my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!",
               },
               {
                 content:

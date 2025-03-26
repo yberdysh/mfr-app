@@ -56,7 +56,7 @@ function FaqSection() {
 
   return (
     <div className="faq-section" ref={sectionRef}>
-      <h2>Other FAQ</h2>
+      <h2>OTHER FAQ</h2>
       <div className="faq-section__content">
         <div className="faq-section__content__questions">
           {faqArray.map(({ title, content }, id) => (

@@ -58,9 +58,9 @@ function Conditions() {
         ))}
       </div>
       <div className="conditions__and-more">And more...</div>
-      <button className="conditions__button" onClick={handleBooking}>
+      {/* <button className="conditions__button" onClick={handleBooking}>
         Book Now
-      </button>
+      </button> */}
     </div>
   );
 }
