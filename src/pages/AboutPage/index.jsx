@@ -9,6 +9,7 @@ function AboutPage() {
   return (
     <div className="about-page">
       <div className="about-content">
+        <h1>Hi, I’m Yevgeniya - AKA Lady Fascia</h1>
         <Section
           sections={[
             {
@@ -18,13 +19,23 @@ function AboutPage() {
             {
               content: (
                 <div>
-                  <h1>Hi, I’m Yevgeniya, Also Known as Lady Fascia</h1>
                   <p>
-                    I’m a Myofascial Release Therapist, and I help people like
-                    you feel free in their bodies and minds. I specialize in
-                    treating chronic pain, postpartum issues, and emotional
-                    trauma. I’m here to help you unlock your body’s potential
-                    and feel limitless.
+                    I’m a John F Barnes Myofascial Release Therapist, and I help
+                    people like you feel free in their body, heart, and mind. I
+                    specialize in treating chronic and unexplained pain or
+                    emotional trauma.
+                  </p>
+
+                  <p>
+                    Oftentimes, I pick up the cases that have been deemed
+                    hopeless, where nothing has worked in the past. I restore
+                    hope and bring ease into dis-ease. Together we restore your
+                    body's natural ability to heal itself.
+                  </p>
+
+                  <p>
+                    As a result, we unlock your body’s potential and you feel
+                    limitless.
                   </p>
                 </div>
               ),
@@ -46,7 +57,7 @@ function AboutPage() {
                   <p>
                     Not too long ago, I was walking around in a body carrying
                     around baggage– years of accumulated stuff of everything I’d
-                    be through. I felt tired. Worn down. Anxious, rageful,
+                    be through. I felt chronically fatigued. Anxious, rageful,
                     depressed. Things weren’t moving right- an injury here, a
                     chronic pain there, a loss of range of motion over there. I
                     felt stuck- physically and emotionally.
@@ -115,10 +126,11 @@ function AboutPage() {
                     your body, but it can.{" "}
                   </p>
                   <p>
-                    It is now my greatest mission to ease human suffering. The
-                    less we are suffering, the more we are living in the energy
-                    of love, kindness, joy, and the more awakened we become. As
-                    a result, the whole world changes.{" "}
+                    It is now my greatest mission to ease human suffering in the
+                    physical and emotional body. The less we are suffering, the
+                    more we are living in the energy of love, kindness, joy, and
+                    the more awakened we become. As a result, the whole world
+                    changes.{" "}
                   </p>
                   <p>
                     The better it gets, the better it gets. What if healing

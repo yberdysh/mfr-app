@@ -51,17 +51,21 @@ function HomePage() {
                   <p>Do you struggle with...</p>
                   <ul>
                     <li>
-                      chronic pain, vagues symptoms, and have been medically
+                      chronic pain, vagues symptoms, and being medically
                       dismissed by doctors?
                     </li>
                     <li>
                       not feeling yourself after an illness, accident, surgery,
                       or trauma?
                     </li>
-                    <li>being told your only option is surgery?</li>
                     <li>
                       your body not moving well and feel like you’re “just
                       getting old?”
+                    </li>
+                    <li>
+                      feeling like something is still missing after trying PT
+                      and chiropractic or being told your only option is
+                      suergery?
                     </li>
                   </ul>
                 </div>
@@ -133,11 +137,16 @@ function HomePage() {
                   <p>Still unsure if MFR is for you? Give it a try if...</p>
                   <ul>
                     <li>
-                      you're feeling pain and discomfort anywhere if your body
+                      you're feeling pain and discomfort anywhere in your body
                     </li>
                     <li>
-                      you're feeling like you can’t let go of your past and have
-                      trauma holding you back
+                      you're tired of being dismissed by doctors, being
+                      recommended for treatment you don't want, or nothing seems
+                      to be working
+                    </li>
+                    <li>
+                      you're feeling like you can’t shake off your past or are
+                      struggling emotionally
                     </li>
                     <li>
                       feel fine but just want to accelerate to the next level

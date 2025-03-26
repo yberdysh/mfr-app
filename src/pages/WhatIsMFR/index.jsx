@@ -86,6 +86,7 @@ function WhatIsMFR() {
           content={
             <ul>
               <li>Without chronic or unexplained pain</li>
+              <li>Healing without the surgery that was recommended</li>
               <li>Feeling free in your body</li>
               <li>Being a more patient parent and partner</li>
               <li>Feeling limitless and full of boundless energy</li>
