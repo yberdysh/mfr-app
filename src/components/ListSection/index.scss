@@ -24,24 +24,36 @@
   }
 
   &__content {
-    ul,
-    div {
-      font-size: 18px;
-      color: $text-brown;
-
-      @include mq(s) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
     ul {
       text-align: left;
       padding-left: 0;
+      font-size: 18px;
+      color: $text-brown;
+      display: grid;
+      gap: 5px;
+
+      @include mq(s) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+      }
+      @include mq(xl) {
+        font-size: 20px;
+        row-gap: 10px;
+        column-gap: 100px;
+      }
 
       li {
         margin-left: 0;
+        list-style: none;
         list-style-position: inside;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+          width: 16px;
+          height: 20px;
+        }
 
         @include mq(s) {
           padding-left: 10px;

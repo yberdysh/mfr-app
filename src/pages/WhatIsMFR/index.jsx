@@ -6,6 +6,8 @@ import FaqSection from "../../components/FaqSection";
 import Section from "../../components/Section";
 import ListSection from "../../components/ListSection";
 import { useNavigate } from "react-router-dom";
+import Carousel from "../../components/Carousel";
+import ArrowIcon from "../../assets/arrow-icon.png";
 
 function WhatIsMFR() {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ function WhatIsMFR() {
             {
               content: (
                 <div>
-                  <h3>What is Fascia?</h3>
+                  <h2 className="first-section__title">What is Fascia?</h2>
                   <p>
                     Fascia is the 3D web of connective tissue that surrounds
                     every bone, muscle, and organ in your body. It is both
@@ -34,7 +36,7 @@ function WhatIsMFR() {
                     stores tissue memory and emotions from unresolved
                     experiences.
                   </p>
-                  <h3>What is MFR?</h3>
+                  <h2 className="first-section__title">What is MFR?</h2>
                   <p>
                     Myofascial release therapy is a hands-on bodywork that
                     effectively dissolves any blockers or restrictions in your
@@ -57,13 +59,6 @@ function WhatIsMFR() {
                   </p>
                 </div>
               ),
-              buttons: [
-                {
-                  text: "Book a Session",
-                  link: "www.google.com",
-                  type: "yellow",
-                },
-              ],
             },
             {
               image: skeleton,
@@ -74,6 +69,12 @@ function WhatIsMFR() {
             },
           ]}
         />
+        <button
+          className="wimfr-content__review-section__button"
+          onClick={handleBooking}
+        >
+          Book a Session
+        </button>
         {/* <Review content="The pain I’ve been living with in my neck and shoulder for 10 years is gone. I’m amazed." />
         <Review
           content="I was genuinely baffled by how much my body seemed to react. 
@@ -81,47 +82,116 @@ function WhatIsMFR() {
         on your thoughts and emotions."
         /> */}
         <Conditions />
-        <ListSection
-          title="Imagine Yourself"
-          content={
-            <ul>
-              <li>Without chronic or unexplained pain</li>
-              <li>Feeling free in your body</li>
-              <li>Being a more patient parent and partner</li>
-              <li>Feeling limitless and full of boundless energy</li>
-              <li>Your athletic performance at its most optimal</li>
-              <li>Feeling connected, not dissociated</li>
-              <li>Playing with your dog, kids, or grandkids on the floor</li>
-              <li>Doing hobbies and activities you love</li>
-              <li>Dissolving stuckness in your life</li>
-              <li>Traveling anywhere in the world without pain or stiffness</li>
-              <li>Having a connected and radiant transition into motherhood</li>
-              <li>Finally letting go of shame, grief, fear, and despair</li>
-              <li>Your athletic performance at its most optimal</li>
-              <li>
-                Feeling the freedom, hope, and excitement of endless
-                possibilities
-              </li>
-              <li>Thriving, not just living</li>
-            </ul>
-          }
-        />
 
         <FaqSection />
+        <ListSection
+          title="IMAGINE YOURSELF"
+          content={
+            <div>
+              <ul>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Without chronic or unexplained pain</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Feeling free in your body</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Being a more patient parent and partner</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Feeling limitless and full of boundless energy</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Your athletic performance at its most optimal</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Feeling connected, not dissociated</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>
+                    Playing with your dog, kids, or grandkids on the floor
+                  </span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Doing hobbies and activities you love</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Dissolving stuckness in your life</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>
+                    Traveling anywhere in the world without pain or stiffness
+                  </span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>
+                    Having a connected and radiant transition into motherhood
+                  </span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>
+                    Finally letting go of shame, grief, fear, and despair
+                  </span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Your athletic performance at its most optimal</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Feeling the freedom of endless possibilities</span>
+                </li>
+                <li>
+                  <img src={ArrowIcon} alt="arrow icon" />
+                  <span>Thriving, not just living</span>
+                </li>
+              </ul>
+              <button
+                className="wimfr-content__review-section__button"
+                onClick={handleBooking}
+              >
+                Book Now
+              </button>
+            </div>
+          }
+        />
         <div className="wimfr-content__review-section">
-          <Review content="My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart." />
-          <Review content="Prior to working with Yevgeniya, I could'nt life my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!" />
-          <Review
-            content="I was genuinely baffled by how much my body seemed to react. 
-        It made me feel much lighter and even has a strangely meditative effect 
-        on your thoughts and emotions."
+          <Carousel
+            isReviews
+            carouselItems={[
+              {
+                content:
+                  "My soul felt lighter leaving the session. I left feeling less weight on my shoulders and heart.",
+              },
+              {
+                content:
+                  "Prior to working with Yevgeniya, I could'nt life my arm past 90 degrees. After a few sessions, I can raise my arm above my head like I used to. I'm amazed!",
+              },
+              {
+                content:
+                  "I was genuinely baffled by how much my body seemed to react.It made me feel much lighter and even has a strangely meditative effect on your thoughts and emotions.",
+              },
+            ]}
           />
-          <button
+
+          {/* <button
             className="wimfr-content__review-section__button"
             onClick={handleBooking}
           >
             Book a Session
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
