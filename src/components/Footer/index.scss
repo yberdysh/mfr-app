@@ -118,6 +118,11 @@
       font-size: 16px;
       color: $white;
       text-align: left;
+      cursor: pointer;
+
+      &:hover {
+        color: $yellow;
+      }
     }
     p {
       margin: 0;
@@ -157,6 +162,16 @@
       }
       .contact-label {
         font-size: 16px;
+
+        &--link {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
       }
     }
   }
@@ -175,6 +190,12 @@
     &__link {
       font-size: 16px;
       text-align: left;
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $yellow;
+      }
     }
   }
 }

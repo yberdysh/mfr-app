@@ -60,15 +60,27 @@ function Footer() {
                 src={locationIcon}
                 alt="Location Icon"
               />
-              <div className="contact-label">Bethlehem, PA</div>
+              <a
+                className="contact-label--link"
+                target="_blank"
+                href="https://www.google.com/maps/place/Bethlehem+Township,+PA/@40.6370904,-75.3505594,13z/data=!4m6!3m5!1s0x89c46ab40b626e0b:0x310e6669da6bff31!8m2!3d40.6672608!4d-75.3062326!16zL20vMF83eDA?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D"
+              >
+                Bethlehem, PA
+              </a>
+              {/* <div className="contact-label">Bethlehem, PA</div> */}
             </div>
           </div>
           <div className="footer__other">
             <div className="footer__other__header">Something Else?</div>
-            {/* TODO: replace with links */}
-            <div className="footer__other__link">Doula Services</div>
-            {/* <div className="footer__other__link">Enlightenment Blog</div> */}
-            <div className="footer__other__link">Learn about Lady Fascia</div>
+            <a
+              className="footer__other__link"
+              href="https://consciousbirthdoula.com"
+            >
+              Doula Services
+            </a>
+            <a className="footer__other__link" href="https://ladyfascia.com">
+              Learn about Lady Fascia
+            </a>
           </div>
         </div>
       </div>
