@@ -66,7 +66,7 @@
     &[data-is-active="true"] {
       display: block;
       position: absolute;
-      top: 66px;
+      top: 94px;
       left: 0;
       width: 100%;
       box-shadow: 0 6px 18px #0003;
@@ -74,7 +74,7 @@
       background-color: $sky-blue;
       text-align: left;
 
-      @include mq(s) {
+      @include mq(m) {
         top: 84px;
       }
 
