@@ -4,7 +4,7 @@ import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
 import image4 from "../../assets/homepage-image-4.jpg";
-import image5 from "../../assets/homepage-image-5.jpg";
+// import image5 from "../../assets/homepage-image-5.jpg";
 
 import Carousel from "../../components/Carousel";
 
@@ -40,6 +40,7 @@ function HomePage() {
         />
 
         <Section
+          mobileReverseOrder
           sections={[
             {
               content: (
@@ -130,6 +131,7 @@ function HomePage() {
         />
 
         <Section
+          mobileReverseOrder
           sections={[
             {
               content: (

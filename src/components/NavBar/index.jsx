@@ -40,7 +40,8 @@ function NavBar() {
   const adjustContentMarginTop = () => {
     const navBar = document.getElementById("nav");
     const content = document.getElementById("page-content");
-
+    console.log("navBar", navBar);
+    console.log("content", content);
     if (navBar && content) {
       content.style.marginTop = `${navBar.offsetHeight}px`;
     }

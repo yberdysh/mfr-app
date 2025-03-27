@@ -2,7 +2,7 @@ import "./index.scss";
 import SectionContent from "../SectionContent";
 import lazyLoad from "../../utils/lazyload";
 
-function Section({ sections, ratio }) {
+function Section({ sections, ratio, mobileReverseOrder }) {
   const sectionRef = lazyLoad();
 
   function setRatioWidth() {
@@ -17,7 +17,12 @@ function Section({ sections, ratio }) {
   const ratioData = setRatioWidth();
 
   return (
-    <div className="section" ref={sectionRef} data-ratio={ratioData}>
+    <div
+      className="section"
+      ref={sectionRef}
+      data-ratio={ratioData}
+      data-mobile-reverse-order={mobileReverseOrder}
+    >
       {sections.map((section, id) => (
         <SectionContent
           key={id}
