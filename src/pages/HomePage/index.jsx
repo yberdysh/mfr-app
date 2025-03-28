@@ -4,7 +4,6 @@ import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
 import image4 from "../../assets/homepage-image-4.jpg";
-// import image5 from "../../assets/homepage-image-5.jpg";
 
 import Carousel from "../../components/Carousel";
 
@@ -22,9 +21,6 @@ function HomePage() {
             It's time to free yourself of pain and trauma, and awaken your
             potential
           </h1>
-          {/* <h1 className="home-content__banner__text">
-            Come for the pain relief, stay for the emotional freedom
-          </h1> */}
         </div>
 
         <Section
@@ -52,21 +48,21 @@ function HomePage() {
                   <p>Do you struggle with...</p>
                   <ul>
                     <li>
-                      chronic pain, vagues symptoms, and being medically
+                      chronic pain, vague symptoms, and being medically
                       dismissed by doctors?
                     </li>
                     <li>
-                      not feeling yourself after an illness, accident, surgery,
-                      or trauma?
+                      not feeling like yourself after an illness, accident,
+                      surgery, or trauma?
                     </li>
                     <li>
                       your body not moving well and feel like you’re “just
                       getting old?”
                     </li>
                     <li>
-                      feeling like something is still missing after trying PT
-                      and chiropractic or being told your only option is
-                      suergery?
+                      feeling that something is still missing after trying PT
+                      and chiropractic — or being told your only option is
+                      surgery?
                     </li>
                   </ul>
                 </div>

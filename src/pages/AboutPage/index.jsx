@@ -57,7 +57,7 @@ function AboutPage() {
                   <p>
                     Not too long ago, I was walking around in a body carrying
                     around baggage– years of accumulated stuff of everything I’d
-                    be through. I felt chronically fatigued. Anxious, rageful,
+                    been through. I felt chronically fatigued. Anxious, rageful,
                     depressed. Things weren’t moving right- an injury here, a
                     chronic pain there, a loss of range of motion over there. I
                     felt stuck- physically and emotionally.
