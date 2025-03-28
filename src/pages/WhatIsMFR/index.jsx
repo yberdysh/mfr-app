@@ -53,10 +53,13 @@ function WhatIsMFR() {
                     to understand it is to experience it for yourself.
                   </p>
                   <p>
-                    What if healing is about removing everything that’s holding
-                    you back and letting your body do the rest?
-                    <p>Ready to let go and heal? </p>
+                    What if healing isn't about fixing anything, but about
+                    removing the obstacles holding you back — and letting your
+                    body do the rest? Every injury. Every hurt. Every experience
+                    you couldn't fully process without resistance. We are all
+                    meant to be this free.
                   </p>
+                  <p>Ready to let go and heal? </p>
                 </div>
               ),
             },

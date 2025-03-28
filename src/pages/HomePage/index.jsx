@@ -93,20 +93,20 @@ function HomePage() {
               content: (
                 <div className="home-content__section">
                   <p>
-                    I’ve been there—I know what it’s like to accept pain as the
-                    new norm. That’s why, as an MFR therapist, it’s my mission
+                    I’ve been there — I know what it’s like to accept pain as
+                    the new norm. That’s why, as an MFR therapist, my mission is
                     to ease your burden no matter how long you’ve been
                     suffering. Even if you feel hopeless and you’ve heard it all
-                    before. Especially if that’s the case for you.
+                    before. <i>Especially</i> if that’s the case for you.
                   </p>
                   <p>
-                    By the way, MFR works to release both physical and emotional
-                    pain too. That’s because emotions are in the body, not the
-                    mind.{" "}
+                    By the way, MFR helps release both physical and emotional
+                    pain too. That’s because emotions aren't just in the mind —
+                    they live in the body.{" "}
                   </p>
                   <p>
-                    If you feel like you can’t let go of your past and have
-                    trauma holding you back, book an appointment.
+                    If you feel like trauma is holding you back and you can’t
+                    let go of the past, book an appointment.
                   </p>
                 </div>
               ),
@@ -135,20 +135,20 @@ function HomePage() {
                   <p>Still unsure if MFR is for you? Give it a try if...</p>
                   <ul>
                     <li>
-                      you're feeling pain and discomfort anywhere in your body
+                      You're experiencing pain or discomfort anywhere in your
+                      body.
                     </li>
                     <li>
-                      you're tired of being dismissed by doctors, being
-                      recommended for treatment you don't want, or nothing seems
-                      to be working
+                      You're tired of being dismissed by doctors, recommended
+                      treatments you don't want, or nothing seems to be working.
                     </li>
                     <li>
-                      you're feeling like you can’t shake off your past or are
-                      struggling emotionally
+                      You feel like you can’t shake off your past or are
+                      struggling emotionally.
                     </li>
                     <li>
-                      feel fine but just want to accelerate to the next level
-                      and unlock your highest potential
+                      You feel fine but just want to accelerate to the next
+                      level and unleash your highest potential.
                     </li>
                   </ul>
                 </div>
