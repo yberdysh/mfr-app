@@ -48,6 +48,11 @@ function FaqSection() {
         "No, because insurance companies often have strict guidelines dicating the number of sessions and the type of treatment you can receive. This can be limiting to your healing process. I want to give you the best care possible and not be limited by insurance companies. You may be able to use an FSA/HSA card, or ask a doctor to refer you for MFR, and try submitting a claim afterward",
     },
     {
+      title: "Why is MFR worth the cost?",
+      content:
+        "With MFR, you're not just paying for a session; you're investing in your well-being. You're taking years off your body, returning to activities you haven't been able to do, and getting your life back. The effects you'll feel are similar to having gone to a PT, chiropractor, massage therapist, and psychosomatic therapist all at once.",
+    },
+    {
       title: "How many sessions will I need?",
       content:
         "Every body is unique, and healing takes time. Factors like how long you’ve had your condition and past trauma affect the process, which isn’t always linear. Many clients continue beyond their initial concern because of the profound benefits of myofascial release. There are always deeper layers to explore. I recommend starting with a series of sessions to see how your body responds.",
