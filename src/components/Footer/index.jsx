@@ -75,10 +75,15 @@ function Footer() {
             <a
               className="footer__other__link"
               href="https://consciousbirthdoula.com"
+              target="_blank"
             >
               Doula Services
             </a>
-            <a className="footer__other__link" href="https://ladyfascia.com">
+            <a
+              className="footer__other__link"
+              href="https://ladyfascia.com"
+              target="_blank"
+            >
               Learn about Lady Fascia
             </a>
           </div>

@@ -50,6 +50,7 @@ function AboutPage() {
           ]}
         />
         <Section
+          mobileReverseOrder
           sections={[
             {
               content: (
