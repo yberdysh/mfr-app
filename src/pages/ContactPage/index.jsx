@@ -31,13 +31,13 @@ function ContactPage() {
         alert("Message sent successfully!");
       } else {
         alert(
-          "Something went wrong. Please try again later or email ladyfascia@myofascialawakening.com."
+          "Something went wrong. Please try again later or email ladyfascia@gmail.com."
         );
       }
     } catch (error) {
       console.error("Error sending email:", error);
       alert(
-        "Something went wrong. Please try again later or email ladyfascia@myofascialawakening.com."
+        "Something went wrong. Please try again later or email ladyfascia@gmail.com."
       );
     }
   };
