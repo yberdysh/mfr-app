@@ -24,9 +24,9 @@ function BookingPage() {
 
           <p>
             If you must cancel or reschedule, please text/call/email immediately
-            at 484-929-3680 or ladyfascia@myofascialawakening.com. If you have
-            symptoms of an active infection (e.g. sore throat, cough, fever),
-            please notify us as soon as possible to reschedule.
+            at 484-929-3680 or ladyfascia@gmail.com. If you have symptoms of an
+            active infection (e.g. sore throat, cough, fever), please notify us
+            as soon as possible to reschedule.
           </p>
 
           {/* <h3>On Call Birth Doula Commitment</h3> */}
@@ -51,8 +51,8 @@ function BookingPage() {
             financially.
           </p>
           <p>
-            Please text/call/email at 484-929-3680 or
-            ladyfascia@myofascialawakening.com with any questions or concerns.
+            Please text/call/email at 484-929-3680 or ladyfascia@gmail.com with
+            any questions or concerns.
           </p>
           <p>I look forward to working together.</p>
         </div>

@@ -46,9 +46,7 @@ function Footer() {
             <div className="footer__contact__header">Get in Touch</div>
             <div className="footer__contact__contact-method" data-larger-icon>
               <img className="contact-img" src={mailIcon} alt="Email Icon" />
-              <div className="contact-label">
-                LadyFascia@myofascialawakening.com
-              </div>
+              <div className="contact-label">LadyFascia@gmail.com</div>
             </div>
             <div className="footer__contact__contact-method">
               <img className="contact-img" src={phoneIcon} alt="Phone Icon" />
