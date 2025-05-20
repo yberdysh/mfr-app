@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 
 function HomePage() {
+  const navigate = useNavigate();
+
   function handleBooking() {
     navigate("/booking");
   }
