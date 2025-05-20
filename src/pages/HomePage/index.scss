@@ -18,21 +18,48 @@
     place-items: center; // Centers both horizontally and vertically
     position: relative;
 
+    // &__image {
+    //   max-width: 1200px;
+    //   width: 100%;
+    //   grid-area: 1 / 1;
+    // }
     &__image {
-      max-width: 1200px;
-      width: 100%;
+      max-width: 1800px;
       grid-area: 1 / 1;
+      object-fit: cover; // Ensures the image is cropped to fit the container
+      object-position: top;
+      width: 100%;
+
+      @include mq(s) {
+        height: 500px;
+      }
+      @include mq(s) {
+        height: 600px;
+      }
+      @include mq(xl) {
+        height: 675px;
+      }
+    }
+    &__overlay {
+      grid-area: 1 / 1; // Ensures the text is in the same grid area as the image
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+
+      @include mq(s) {
+        gap: 20px;
+      }
     }
     &__text {
-      grid-area: 1 / 1; // Ensures the text is in the same grid area as the image
       text-align: center;
       color: $white;
-      align-self: start;
       font-size: 36px;
-      padding-left: 36px;
-      padding-right: 36px;
+      padding-left: 30px;
+      padding-right: 30px;
       margin: 0;
-      align-self: center;
       @include copperplate_gothic(700);
 
       @include mq(s) {
@@ -40,16 +67,25 @@
         font-size: 50px;
         max-width: 590px;
         align-self: normal;
-        padding-top: 30px;
+        padding-left: 36px;
+        padding-right: 36px;
       }
       @include mq(m) {
         font-size: 65px;
         max-width: 800px;
-        padding-top: 40px;
       }
       @include mq(xl) {
         font-size: 75px;
         max-width: 900px;
+      }
+    }
+
+    &__button {
+      @include button($sky-blue, $white);
+      max-width: 200px;
+
+      @include mq(m) {
+        display: none;
       }
     }
   }
