@@ -87,8 +87,7 @@
       @include button($sky-blue, $white);
       max-width: 200px;
 
-      @include mq(m) {
-        // display: none;
+      @include mq(s) {
         max-width: 300px;
         font-size: 30px;
         padding: 24px 30px;
