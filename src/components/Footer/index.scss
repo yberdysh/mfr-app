@@ -176,6 +176,28 @@
     }
   }
 
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+
+    &__header {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+    }
+    &__icons {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
   &__other {
     display: flex;
     flex-direction: column;

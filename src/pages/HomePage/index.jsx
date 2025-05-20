@@ -4,25 +4,37 @@ import Section from "../../components/Section";
 import image1 from "../../assets/homepage-image-1.jpeg";
 import image2 from "../../assets/homepage-image-2.jpeg";
 import image4 from "../../assets/homepage-image-4.jpg";
-
+import { useNavigate } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 
 function HomePage() {
+  function handleBooking() {
+    navigate("/booking");
+  }
+
   return (
     <div className="home-page">
-      <div className="home-content">
-        <div className="home-content__banner">
-          <img
-            className="home-content__banner__image"
-            src={treatment}
-            alt="treatment room"
-          />
+      <div className="home-content__banner">
+        <img
+          className="home-content__banner__image"
+          src={treatment}
+          alt="treatment room"
+        />
+        <div className="home-content__banner__overlay">
           <h1 className="home-content__banner__text">
             It's time to free yourself of pain and trauma, and awaken your
             potential
           </h1>
+          <button
+            className="home-content__banner__button"
+            onClick={handleBooking}
+          >
+            Book Now
+          </button>
         </div>
+      </div>
 
+      <div className="home-content">
         <Section
           sections={[
             {
