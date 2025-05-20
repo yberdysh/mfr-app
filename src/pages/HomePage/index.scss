@@ -52,6 +52,9 @@
       @include mq(s) {
         gap: 20px;
       }
+      @include mq(m) {
+        gap: 30px;
+      }
     }
     &__text {
       text-align: center;
@@ -85,7 +88,10 @@
       max-width: 200px;
 
       @include mq(m) {
-        display: none;
+        // display: none;
+        max-width: 300px;
+        font-size: 30px;
+        padding: 24px 30px;
       }
     }
   }
