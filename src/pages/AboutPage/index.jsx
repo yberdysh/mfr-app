@@ -20,10 +20,10 @@ function AboutPage() {
               content: (
                 <div>
                   <p>
-                    I’m a John F. Barnes Myofascial Release Therapist, and I
-                    help people like you feel free in their body, heart, and
-                    mind. I specialize in treating chronic and unexplained pain
-                    or emotional trauma.
+                    I’m a Myofascial Release Therapist, and I help people like
+                    you feel free in their body, heart, and mind. I specialize
+                    in treating chronic and unexplained pain or emotional
+                    trauma.
                   </p>
 
                   <p>
