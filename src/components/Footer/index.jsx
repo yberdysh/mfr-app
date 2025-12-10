@@ -63,9 +63,9 @@ function Footer() {
               <a
                 className="contact-label--link"
                 target="_blank"
-                href="https://www.google.com/maps/place/Bethlehem+Township,+PA/@40.6370904,-75.3505594,13z/data=!4m6!3m5!1s0x89c46ab40b626e0b:0x310e6669da6bff31!8m2!3d40.6672608!4d-75.3062326!16zL20vMF83eDA?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Fountain+Hill,+PA+18015/@40.60372,-75.4077682,15z/data=!3m1!4b1!4m6!3m5!1s0x89c43e8e58198d61:0x1ce21888142b0262!8m2!3d40.6014873!4d-75.3951808!16zL20vMF8zZnc?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"
               >
-                Bethlehem, PA
+                Fountain Hill, PA
               </a>
               {/* <div className="contact-label">Bethlehem, PA</div> */}
             </div>
